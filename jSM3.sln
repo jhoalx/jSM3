@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperMetroidApi", "SuperMetroidApi\SuperMetroidApi.csproj", "{3F4929F4-F3A1-4A74-8CF7-7172B7FAAFB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jSM3", "jSM3\jSM3.csproj", "{CC2C4415-7F86-4D8C-9A4F-75669134B79D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F4929F4-F3A1-4A74-8CF7-7172B7FAAFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4929F4-F3A1-4A74-8CF7-7172B7FAAFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4929F4-F3A1-4A74-8CF7-7172B7FAAFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4929F4-F3A1-4A74-8CF7-7172B7FAAFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2C4415-7F86-4D8C-9A4F-75669134B79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2C4415-7F86-4D8C-9A4F-75669134B79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2C4415-7F86-4D8C-9A4F-75669134B79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2C4415-7F86-4D8C-9A4F-75669134B79D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C51F36E9-A6EF-4FAA-830A-02B925808431}
+	EndGlobalSection
+EndGlobal

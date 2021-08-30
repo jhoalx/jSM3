@@ -1,0 +1,23 @@
+Roadmap:
+
+tracker:
+agregar puntito verde/gris cuando el item está equipado/desequipado
+agragar consumibles (Misiles, sMisiles y sBombs)
+
+Gather as lot of Ram offsets
+Create SMApi interface
+create tracker
+create community interaction (twitch bot)
+
+FIND A GOOD NAME
+
+
+################################################################################
+ideas para comandos / troleadas / ayudas
+################################################################################
+-que te habiliten un shinespark en X dirección de forma inesperada
+-activarle por un tiempo que se inviertan los controles
+-todas las puertas en negro/gris por x segundos
+-uber bosses?
+-samus se convierte en morph ball a peticion
+-desequipar todos los items

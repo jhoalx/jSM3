@@ -1,0 +1,63 @@
+SystemID SNES
+007E09A2	b	h	0	System Bus	Suit/Misc (Equipped)
+007E09A3	b	h	0	System Bus	Boots/grapple/xray (Equipped)
+007E09A4	b	h	0	System Bus	Suit/Misc (Have)
+007E09A5	b	h	0	System Bus	Boots/grapple/xray (Have)
+007E09A6	b	h	0	System Bus	Beams (Equipped)
+007E09A7	b	h	0	System Bus	Charge Beam (Equipped)
+007E09A8	b	h	0	System Bus	Beams (Have)
+007E09A9	b	h	0	System Bus	Charge Beam (Have)
+007E09C0	b	u	0	System Bus	Current Reserve Supply Mode
+007E09C2	w	u	0	System Bus	Energy Current (2byte)
+007E09C2	w	h	0	System Bus	Energy Current (2Byte - Hex)
+007E09C4	w	u	0	System Bus	Energy Max
+007E09C6	w	u	0	System Bus	Current Missiles
+007E09C8	w	u	0	System Bus	Current Missiles Max
+007E09CA	w	u	0	System Bus	Super Missiles Current 
+007E09CC	b	u	0	System Bus	Super Missiles Max
+007E09D2	b	h	0	System Bus	Item Selected
+007E09D4	w	u	0	System Bus	Reserve Tank Max 
+007E09D6	w	u	0	System Bus	Reserve Tank Current
+007E0A4D	b	u	0	System Bus	Subunit Energy -This health is only affected by environmental damage (such as lava)
+007E0A68	b	u	0	System Bus	Shinespark charge timer
+007E0A76	b	h	0	System Bus	Hyper Beam (Have & Equiped)
+007E0AF6	w	u	0	System Bus	X Position
+007E0AF8	w	u	0	System Bus	X Position (Subpixel)
+007E0AFA	w	u	0	System Bus	Y Position
+007E0AFC	w	u	0	System Bus	Y Position (Subpixel)
+007E0B00	b	u	0	System Bus	Vertical hitbox radius
+007E0B2C	w	u	0	System Bus	Y speed, fraction of a pixel
+007E0B2E	b	u	0	System Bus	Y Speed (pixels)
+007E0B3F	b	u	0	System Bus	Speed boost level
+007E0B42	b	u	0	System Bus	X Speed (pixels)
+007E0B44	w	h	0	System Bus	X Speed (Subpixels)
+007E0B46	b	u	0	System Bus	X momentum, pixels
+007E0B48	w	h	0	System Bus	X momentum, fraction of a pixel
+007E0B64	w	u	0	System Bus	Projectile 1 X position, pixels
+007E0B78	w	u	0	System Bus	Projectile 1 Y position, pixels
+007E0B8C	w	u	0	System Bus	Projectile 1 X position, fraction of a pixel
+007E0BA0	w	u	0	System Bus	Projectile 1 Y position, fraction of a pixel
+007E0BB4	w	u	0	System Bus	Projectile 1 X hitbox radius, pixels
+007E0BC8	w	u	0	System Bus	Projectile 1 Y hitbox radius, pixels
+007E0BDC	w	s	0	System Bus	Projectile 1 X speed, 1/256th pixels[7]
+007E0BDC	w	u	0	System Bus	Projectile 1 X speed, 1/256th pixels
+007E0BF0	w	s	0	System Bus	Projectile 1 Y speed, 1/256th pixels
+007E0DC2	b	u	0	System Bus	Beam charge counter
+007E0C86	b	u	0	System Bus	1st bomb timer
+007E0C88	b	u	0	System Bus	2nd bomb timer
+007E0C8A	b	u	0	System Bus	3rd bomb timer
+007E0F8C	w	u	0	System Bus	First Enemy's (Most Bosses) energy
+007E0FCC	w	u	0	System Bus	Second Enemy's (Mother Brain) energy
+007E0F9C	b	u	0	System Bus	First Enemy's (Most Bosses) invincibility timer
+007E1842	w	u	0	System Bus	In-Game frame counter[8]
+007E09DE	b	u	0	System Bus	In-Game Minutes
+007E09DC	b	u	0	System Bus	In-Game Seconds
+007E09DA	b	u	0	System Bus	In-Game Frames
+007E0051	b	h	0	System Bus	Brightness Control (00-0F)
+007E0A4A	w	u	0	System Bus	x
+007E0A4B	b	h	0	System Bus	FF = Hyper Beam rainbow samus color
+007ED871	b	h	0	System Bus	Collected items Brinstar 1
+007ED873	b	h	0	System Bus	Collected items Brinstar 2
+007ED874	b	h	0	System Bus	Collected items Brinstar3
+007ED875	b	h	0	System Bus	Collected items Brinstar 4
+

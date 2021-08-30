@@ -1,0 +1,16 @@
+SystemID SNES
+007E09C0	b	u	0	System Bus	supply mode
+007E09D6	w	u	0	System Bus	curr Reserve 
+007E3A8E	b	h	0	System Bus	
+007E3A90	b	h	0	System Bus	
+007E3A92	b	h	0	System Bus	
+007E3A94	b	h	0	System Bus	
+007EC618	b	h	0	System Bus	
+007EC61A	b	h	0	System Bus	
+007EC658	b	h	0	System Bus	
+007EC65A	b	h	0	System Bus	
+007EC698	b	h	0	System Bus	
+007EC699	b	h	0	System Bus	
+007EC69A	b	h	0	System Bus	
+007EC69B	b	h	0	System Bus	
+

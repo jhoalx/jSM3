@@ -1,0 +1,2628 @@
+
+                      ###### ###  ### #####   #####  ######
+                     #    #   #    #  #    #  #   #   #    #
+                    #        #    #   #    #   #       #    #
+                   ######    #    #   #####    ###      ####
+                       #    #    #    #         #        #   #
+                 #    #     #    #    #         #   #     #   #
+                ######     ######    ###         #####    ###  ##
+
+         ###  ####  ######  #########  #####    #####    #####  #######
+        #  ###  #   #   #   #   #   #  #    #  #     #     #      #     #
+       #   #   #   #            #      #    #   #     #     #      #     #
+      #       #    ####         #      #####    #     #     #       #     #
+     #       #    #             #      #    #    #     #     #       #     #
+    #       #     #             #      #    #    #     #     #        #     #
+   #       #     #    #         #      #    #     #     #     #         #     #
+ ###     ###    ######         ###    ###   ##     #####     #####     #######
+
+
+      P r o          A c t i o n          R e p l a y          C o d e s
+
+-------------------------------------------------------------------------------
+Super Metroid Pro Action Replay Codes
+
+Version: 2.3
+
+Created By: David Morris (aka Guard Master)
+E-mail: guardmaster (@t) gmail
+
+Date Created with First Release: 2006-07-31
+Date Last Updated as Official Release: 2019-07-16
+
+Best viewed with a fixed-width font.
+-------------------------------------------------------------------------------
+
+
+
+
+===============================================================================
+-------------------------------------------------------------------------------
+-----------------------------      T A B L E      -----------------------------
+-----------------------------         O F         -----------------------------
+-----------------------------   C O N T E N T S   -----------------------------
+-------------------------------------------------------------------------------
+===============================================================================
+
+1. Introduction
+2. Updates
+3. Code Layout Explanation
+  A. Code Examples [3A]
+  B. Decimal to Hexadecimal Conversion [3B]
+4. Pro Action Replay Codes
+  A. Quick List [4A]
+  B. Samus [4B]
+    1. Items [4B1]
+      a. Inventory
+      b. Collected
+    2. Movement [4B2]
+      a. Position
+      b. Speed
+      c. Super Jump/Shinespark
+      d. Elevator
+      e. Jumping
+      f. Through Walls
+      g. Damage
+    3. Projectiles [4B3]
+      a. In Air
+      b. Damage
+      c. SBA Time
+    4. Bombs [4B4]
+      a. Laid
+      b. Damage
+      c. Power Bomb
+  C. Enemies & Bosses [4C]
+    1. Current Room [4C1]
+    2. Boss Fight [4C2]
+    3. Bosses Defeated [4C3]
+  D. Events [4D]
+  E. Doors [4E]
+    1. Opened [4E1]
+    2. Missile Hit Count [4E2]
+  F. Map [4F]
+    1. Mapped [4F1]
+    2. Explored Map [4F2]
+    3. Pause Map Scrolling [4F3]
+    4. Minimap [4F4]
+    5. Regions [4F5]
+    6. Saves [4F6]
+  G. Time [4G]
+    1. Time Played [4G1]
+    2. Countdown [4G2]
+  H. Game Start [4H]
+  I. Before Gameplay [4I]
+    1. Demo [4I1]
+    2. Control Icons [4I2]
+    3. Game Controls [4I3]
+    4. Menu [4I4]
+  J. Screen [4J]
+  K. Audio [4K]
+  L. Debug [4L]
+  M. Miscellaneous [4M]
+5. Copyright
+
+
+
+
+
+===============================================================================
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+     ::::::::::::::::::::                             ::::::::::::::::::::
+::::::::::::::::::::::    1.  I n t r o d u c t i o n    ::::::::::::::::::::::
+     ::::::::::::::::::::                             ::::::::::::::::::::
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+===============================================================================
+
+Welcome to the Pro Action Replay (PAR) Codes list with descriptions and
+explanations for the game Super Metroid on the Super Nintendo Entertainment
+System (known as Super Famicom in Japan). In total there are 699 PAR codes
+(380 if excluding the 32 enemies and their attributes), ranging from going
+through walls to the debug mode. Each code contains the name of the code, the
+address of the code, and either a list of possible values or a range of values
+for the code. Every code has been thoroughly tried and tested, but no
+guarantees are given for anyone who tries them out, especially given the many
+situations possibly faced in the game and the differences each screen within
+the game offers. Subsections are divided for an easy search-and-find through
+the find function within the document reader.
+
+Not all material within this document is absolutely accurate. If you find any
+issues with either the codes, values, explanations, descriptions, or anything
+else contained in this document, or have a complaint, comment, or compliment,
+feel free to send an e-mail. If you do not understand the layout of the codes
+and/or sections of codes, make sure to refer to section 3.
+
+Much thanks goes to Kejardon, Jathys, Grime and everyone else who helped to
+dissect Super Metroid at its finest and have documentation of findings publicly
+available. This document would not nearly have as many codes without their hard
+work.
+
+
+
+
+===============================================================================
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+     :::::::::::::::::::::::::                   :::::::::::::::::::::::::
+:::::::::::::::::::::::::::    2.  U p d a t e s    :::::::::::::::::::::::::::
+     :::::::::::::::::::::::::                   :::::::::::::::::::::::::
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+===============================================================================
+
+Version 2.3 (2019-07-16) - CURRENT
+-Added Quick List - The hand selected list has codes you can quickly find and
+enter. It was added due to the user requests.
+-Fixed super missiles max and power bombs Max Norm codes
+-Fixed Time Played Hours PAR code
+-Fixed Suit/Misc. range values
+-Fixed countdown max norm value
+-Fixed minor typos
+-Changed Drops after Boss Defeat PAR Code value inserted
+
+
+Version 2.1 (2015-08-31)
+-Added many, many new codes
+-Reformatted throughout, creating detailed sections
+-Modified some existing codes
+
+
+Version 1.0 (2006-07-31)
+-Initial release
+
+
+
+
+===============================================================================
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+     :::::::::                                                   :::::::::
+::::::::::::   3.  C o d e   L a y o u t   E x p l a n a t i o n   ::::::::::::
+     :::::::::                                                   :::::::::
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+===============================================================================
+
+Although different portions of the document contain different formatting
+styles, there is a general format used throughout. We are going to analyze the
+general layout as an example to ensure that we understand it, as serves purpose
+of this section.
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   A. Code Examples [3A]                                                   <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+-------------------------------------------------------------------------------
+a. Example Group Head       PAR Code       Max Code       Range
+-------------------------------------------------------------------------------
+1) First PAR Code           7E1000??       7E1000FF       0 - 255 (00 - FF)
+Some description for the above code.
+
+2) Second PAR Code          7E0000??       7E0000FF       0 - 65535
+                            7E0001??       7E0001FF       (00 00 - FF FF)
+
+3) Third PAR Code           7E2000??                      00 - Select One
+Descriptions for specific PAR codes will always be        01 - Select Two
+below the name unless otherwise specified.                02 - Select Three
+                                                          03 - Select Four
+
+4) Fourth PAR Code          7E3000??       7E3000FF       01 - Add One
+                                                          02 - Add Two
+                                                          04 - Add Four
+                                                          08 - Add Eight
+                                                          10 - Add Ten
+                                                          20 - Add Twenty
+                                                          40 - Add Forty
+                                                          80 - Add Eighty
+
+Just to keep in mind: When the word "value" is used it refers to a number. When
+the words "PAR code" is used that refers can refer to either the whole row or
+just the PAR code itself. Whenever there is "00" or a zero before the number
+then the number is in hexadecimal form.
+
+For each PAR code above, starting from left to right there is: the name given,
+the PAR code(s) to use, the PAR code(s) filling in the "??" with the maximum
+amount to enter, and the range of possible values you can enter for the code.
+Below all of that per one is the description for the code, if there is one. The
+"??" in the PAR code must be filled in with the value of you want. The value
+must be in hexadecimal format. The minimum value is always 0 unless indicated
+by the code's description. For some codes the "??" may already be filled in and
+no range is given, which means you just need to enter that code to get it
+working. There may be additional columns for certain subsections, which should
+be self-explanatory.
+
+To explain the PAR codes in the examples above:
+
+For the first PAR code type you need to choose a value to enter for the code
+and replace the "??" with the value in hexadecimal form. Let us say if I want
+to enter "99" for the code then I would convert the value to hexadecimal, which
+is "63" and enter 7E100063 as the code.
+
+For the second PAR code type you do the same as the first but you will be
+handling a larger number, possibly. Let us say if I want to enter "300" for the
+code. I would then convert the value to hexadecimal, which is "12C". Subsection
+b explains how to convert. Hexadecimal is always in groups of two, so include
+the 0 before the 1 to get "012C". Then we split the value up to get "01 2C" and
+reverse the numbers to finally get "2C 01". I then would enter both 7E00002C
+and 7E000101 as the code.
+
+For the third PAR code type you must select one of the values from the range
+and replace the "??" with the value. If I want "Select Three" from that range
+then I would enter 7E200002 as the code. To know if you have to select a value
+for the code you can see by with the range being in numerical order and no max
+code is provided.
+
+For the fourth PAR code type you must add the values in the range for what you
+want and replace the "??" with the added value. If I want to select "Add Two",
+"Add Twenty" and "Add Eighty" then I will add all the values up and get A2 and
+then enter the code as 7E3000A2. The values are in hexadecimal so they need to
+be added in that way also. To know it is a code where you must add the values
+you will often only see some or all of the values: 01, 02, 04, 08, 10, 20, 40,
+80 in the range.
+
+Note that some PAR codes in this document only can work on emulation due to the
+way PAR codes are handled on the console versus emulation. These are NOT
+pointed out throughout, so you will need to explore and see if and what
+works if you are entering these codes on the console.
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   B. Decimal to Hexadecimal Conversion [3B]                               <+
+ /|                                                                         |\
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+  '-------------------------------------------------------------------------'
+
+If you want to know how to change a certain number into hexadecimal, first
+choose a method and follow the instructions:
+
+Method 1 - When using Microsoft Windows:
+1. Open the program "Calculator". For all versions of Windows with a GUI
+   interface, you can either: 1) Click start and click Run (also holding down
+   the Windows symbol key and pressing R does the same). Type down "calc"
+   (without the quotations) and press enter. 2) Use the search feature on
+   Windows and type "calculator".
+2. Now the calculator needs to be on the correct format. Depending on which
+   version of windows you have requires certain actions:
+    -If the operating system is Windows 7, 8, or 10 (and possibly includes
+      later versions), set the calculator to programmer, if it is not already
+      set. To do this, click View at the top menu and click Programmer (or hold
+      alt and press 3).
+    -If the operating system is Windows XP or earlier, set the calculator to
+      scientific, if it is not already set. To do this, click View at the top
+      menu and click Scientific.
+3. Make sure decimal mode is selected and enter the number you want to convert.
+4. Set it to hex mode, which will convert the number.
+5. Replace the question marks with the number(s)/letter(s) you see.
+
+Method 2 - Using Google's search engine:
+You can also access Google's search engine and type into the search box:
+"[insert decimal number here] to hex". For example, by entering "78 to hex" the
+result will be 0x4E. Just ignore the 0x part as it does not pertain to the
+actual code and the final answer will be 4E.
+
+Method 3 - Do it yourself:
+There are also many other websites that can covert from decimal to hexadecimal.
+You can also calculate by hand if you are not able to do it in your head...
+that is, if you are that daring.
+
+
+
+
+
+===============================================================================
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+     :::::::::                                                   :::::::::
+::::::::::::   4.  P r o   A c t i o n   R e p l a y   C o d e s   ::::::::::::
+     :::::::::                                                   :::::::::
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+===============================================================================
+
+Keep in mind whenever you use cheats in games, especially PAR codes, you run
+the risk of losing your saves, whether through deletion or being overwritten
+unintentionally. For some of these codes there is always the potential for all
+saves to automatically be overridden if a save is loaded with a code on. While
+I try my best to forewarn you of potential data loss, I cannot guarantee
+that a code having no warning will actually do nothing to the saves. In other
+words, BACK UP THE FILES IF YOU CAN.
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   A. Quick List [4A]                                                      <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+Infinite Energy             Max Energy
+7E09C2DB                    7E09C4DB
+7E09C305                    7E09C505
+
+Infinite Reserve Tank       Max Reserve Tank
+7E09D690                    7E09D490
+7E09D701                    7E09D501
+
+Infinite Missiles           Max Missiles
+7E09C6E6                    7E09C8E6
+
+Infinite Super Missiles     Max Super Missiles
+7E09CA32                    7E09CC32
+
+Infinite Power Bombs        Max Power Bombs
+7E09CE32                    7E09D032
+
+Have All Equipment
+7E09A42F
+7E09A5F3
+
+Have All Beams              Have Hyper Beam
+7E09A80F                    7E0A7601
+7E09A910
+
+Beginning Ridley Immediately Flies Away
+7E781A64
+
+All Minibosses and Bosses Defeated in...
+Crateria  Brinstar  Norfair   Wrecked Ship  Maridia   Tourian   Space Colony
+7ED82804  7ED82903  7ED82A07  7ED82B01      7ED82C03  7ED82D02  7ED82E01
+
+All Doors Blue (except ones that are always metal/grey) in...
+Crateria  Brinstar  Norfair   Wrecked Ship  Maridia   Tourian
+7ED8B023  7ED8B46F  7ED8B9FE      <- 7ED8C1FF ->      7ED8C4AF
+7ED8B1F0  7ED8B5FF  7ED8BAFF  7ED8C07C      7ED8C2FF  7ED8C503
+7ED8B209  7ED8B67F  7ED8BBFF                7ED8C3FC
+7ED8B3EE  7ED8B7FF  7ED8BC01
+          7ED8B8FF
+
+Map Station Map Gotten in...
+Crateria  Brinstar  Norfair   Wrecked Ship  Maridia   Tourian   Space Colony
+7ED90801  7ED90901  7ED90A01  7ED90B01      7ED90C01  7ED90D01  7ED90E01
+
+Select Region When Loading a File
+81A81A00
+81A8AF80
+Only the right, down, select buttons allow you to scroll through the selectable
+regions. Samus must already be in Zebes for this code to have use. Can use the
+Skip Intro code on new files.
+
+Skip Intro and Start on Planet Zebes
+82EEBB00
+This plays in effect when you select a file that is still on the Space Colony.
+
+Go to the last save point before Mother Brain (final boss) after loading a game
+from an existing save file
+7E079F05
+7E078B10
+Can use the Skip Intro code on new files to use this code.
+
+No Time Played
+7E09DE00
+7E09E000
+This can be used to see a better ending of the game.
+
+99'99 Countdown Timer
+7E094699
+7E094799
+
+Invulnerability
+7E18A8FF
+7E18A9FF
+
+Samus doesn't get Knockbacked
+7E18AA00
+
+Walk Through Walls
+948F4960
+
+Moon Jump
+9090F780
+9090F82E
+
+Slower Moon Jump
+7E0B2E03
+
+Easy Space Jumping
+90A4BEEA
+Space jump boots must be equipped. Hold the jump button to automatically keep
+space jumping. Falling down with the space jump in water is slower also.
+Sometimes after going through a door it may not work. To fix it, pause the game
+and then unpause.
+
+Can Wall Jump in Liquid without Gravity Suit
+909ED302
+909EDF03
+
+Super Wall Jump
+909ED108
+909EDD0A
+The Gravity Suit must be equipped if in liquid.
+
+Run Faster
+9097AD45
+Must hold the run button.
+
+Can do Shinespark/Crystal Flash
+7E0A6801
+
+Have Blue Suit
+7E0B3F04
+
+Vertical Shinespark Deals no Damage to Samus
+90D0CEAD
+
+Diagonal Shinespark Deals no Damage to Samus
+90D0FDAD
+
+Speed Running Super Powerful
+A0A4B1FF
+A0A4B07F
+
+Pseudo Screw Attack Super Powerful
+A0A4CDFF
+A0A4CE7F
+To do the pseudo screw attack hold charge in and do a spin jump.
+
+Screw Attack Super Powerful
+A0A4C3FF
+A0A4C47F
+
+Shinespark Super Powerful
+A0A4BBFF
+A0A4BC7F
+To do a shinespark, have the speed booster boots equipped, keep running until
+Samus is blue, immediately press down, and then either press jump and up, left,
+or right, or hold the L button or R button and then press jump.
+
+Can Shoot Beams Very Fast
+7E0CCCFF
+7E0CCDFF
+
+Power Beam Super Powerful
+938431FF
+9384327F
+The power beam is the beam Samus has in the beginning.
+
+Jump Higher from Bombs
+909EF50A
+909EF70A
+
+Jump Even Higher from Bombs
+909EF510
+909EF710
+
+Bombs Super Powerful
+938675FF
+9386767F
+
+Can Always Lay Power Bombs
+7E0CEE00
+7E0CEF00
+There will be graphical glitches if the bombs are laid too fast. Can you do the
+power bomb jump?
+
+First Enemy, Minibosses, and Bosses Have no Health
+7E0F8C00
+7E0F8D00
+
+No Enemies Needed to be Killed
+7E0E5200
+Rooms that have grey doors that require killing all the enemies to have them
+unlocked will automatically be unlocked.
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   B. Samus [4B]                                                           <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+-------------------------------------------------------------------------------
+                            PAR Code   Max Code   Max Norm    Range
+-------------------------------------------------------------------------------
+1) Current Energy           7E09C2??   7E09C2FF   7E09C2DB    0 - 32767
+                            7E09C3??   7E09C37F   7E09C305    (00 00 - FF 7F)
+Setting it to more than 32767 results in instant death when Samus gets hurt.
+In a normal playthrough with all tanks collected the max amount is 1499.
+
+2) Energy Max               7E09C4??   7E09C4FF   7E09C4DB    0 - 32767
+                            7E09C5??   7E09C57F   7E09C505    (00 00 - FF 7F)
+In a normal playthrough with all tanks collected the max amount is 1499.
+
+3) Current Reserve Tank     7E09D6??   7E09D6FF   7E09D690    0 - 32767
+                            7E09D7??   7E09D77F   7E09D701    (00 00 - FF 7F)
+In a normal playthrough with all tanks collected the max amount is 400. Also,
+by setting the value too high there can be graphical glitches in the menu and
+even some slowing.
+
+4) Reserve Tank Max         7E09D4??   7E09D4FF   7E09D490    0 - 32767
+                            7E09D5??   7E09D57F   7E09D501    (00 00 - FF 7F)
+In a normal playthrough with all tanks collected the max amount is 400. Also,
+by setting the value too high there can be graphical glitches in the menu and
+even some slowing.
+
+5) Current Missiles         7E09C6??   7E09C6FF   7E09C6E6    0 - 65535
+                            7E09C7??   7E09C7FF   7E09C700    (00 00 - FF FF)
+Max displayed amount is 999. In a normal playthrough with all missiles
+collected the max amount is 230.
+
+6) Missiles Max             7E09C8??   7E09C8FF   7E09C8E6    0 - 65535
+                            7E09C9??   7E09C9FF   7E09C900    (00 00 - FF FF)
+Max displayed amount is 999. In a normal playthrough with all missiles
+collected the max amount is 230.
+
+7) Current Super Missiles   7E09CA??   7E09CAFF   7E09CA32    0 - 65535
+                            7E09CB??   7E09CBFF   7E09CB00    (00 00 - FF FF)
+The item still can be selected and used even if the item icon does not display
+on the top and the quantity is set above 1.
+Max displayed amount is 99. In a normal playthrough with all super missiles
+collected the max amount is 50.
+
+8) Super Missiles Max       7E09CC??   7E09CCFF   7E09CC32    0 - 65535
+                            7E09CD??   7E09CDFF   7E09CD00    (00 00 - FF FF)
+Max displayed amount is 99. In a normal playthrough with all super missiles
+collected the max amount is 50.
+
+9) Current Power Bombs      7E09CE??   7E09CEFF   7E09CE32    0 - 65535
+                            7E09CF??   7E09CFFF   7E09CF00    (00 00 - FF FF)
+The item still can be selected and used even if the item icon does not display
+on the top and the quantity is set above 1.
+Max displayed amount is 99. In a normal playthrough with all power bombs
+collected the max amount is 50.
+
+0) Power Bombs Max          7E09D0??   7E09D0FF   7E09D032    0 - 65535
+                            7E09D1??   7E09D1FF   7E09D100    (00 00 - FF FF)
+Max displayed amount is 99. In a normal playthrough with all power bombs
+collected the max amount is 50.
+
+A) Item Selected            7E09D2??                          00 - None
+Both the Grappling Beam and X-Ray scope can still             01 - Missiles
+be used even if any of the items have not been acquired.      02 - S. Missiles
+                                                              03 - Power Bomb
+                                                              04 - Grappling
+                                                              05 - X-Ray Scope
+
+B) Supply Mode (Reserves)   7E09C0??                          01 - Auto
+                                                              02 - Manual
+
+C) Subunit Energy           7E0A4D??   7E0A4DFF               0 - 255 (00-FF)
+This health is only affected by environmental damage (such as lava).
+
+D) Invulnerability (Timer)  7E18A8??   7E18A8FF               0 - 65535
+                            7E18A9??   7E18A9FF               (00 00 - FF FF)
+
+E) Invulnerability (Debug)  7E0DE007
+
+F) Invulnerability (#3)     91DF71FF
+
+G) Contact Damage           7E0A6E??   7E0A6E01               00 - Normal
+This is similar to the blue suit and screw attack. There      01 - Less
+is no invulnerability time, projectiles do hurt, and Samus         Vulenerable
+cannot do bomb jumping.
+
+
+H) Reserve Missiles         7E09D8??   7E09D8FF   7E09D863    0 - 65535
+                            7E09D9??   7E09D9FF   7E09D900    (00 00 - FF FF)
+This was not put in the game despite the developers' original intentions, so
+the code will not do anything in the original version of the game. The max
+amount normally in the game is 99, or if Samus can already carry more missiles
+than that then the max is equal to the max missiles that can be carried.
+
+
+                      ___________________________________
+                     /                                   \
+         ============           1. Items [4B1]            ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+a. Inventory     Have PAR  Max Code   Equip PAR  Max Code   Range
+-------------------------------------------------------------------------------
+1) Suit/Misc.    7E09A4??  7E09A42F   7E09A2??   7E09A22F   01 - Varia Suit
+                                                            02 - Spring Ball
+                                                            04 - Morphing Ball
+                                                            08 - Screw Attack
+                                                            20 - Gravity Suit
+
+2) Boots/Rest    7E09A5??  7E09A5F3   7E09A3??   7E09A3F3   01 - Hi-Jump Boots
+In order to be able to switch to the Grappling Beam         02 - Space Jump
+and X-Ray Scope you must enter the Equip PAR code           10 - Bomb
+for them.                                                   20 - Speed Booster
+                                                            40 - Grappling Beam
+                                                            80 - X-Ray Scope
+
+3) Beams         7E09A8??  7E09A80F   7E09A6??   7E09A60F   01 - Wave
+Normally you are not allowed to equip both the Spazer       02 - Ice
+Beam and Plasma Beam. Special attention is required when    04 - Spazer
+handling the dangerous, but deadly, combination of beams.   08 - Plasma
+
+4) Charge Beam   7E09A9??  7E09A910   7E09A7??   7E09A710   00 - Disabled
+                                                            10 - Enabled
+
+5) Hyper Beam    7E0A76??  7E0A7601      Automatically      00 - Disabled
+The Hyper Beam overrules all other beams.                   01 - Enabled
+
+
+-------------------------------------------------------------------------------
+b. Collected           01  02  04  08  10  20  40  80   Location
+-------------------------------------------------------------------------------
+1) 7ED870?? (Max: FF)   P   M   M   M   M   E   M   B   Crateria
+2) 7ED871?? (Max: FF)   E   M   M   S   M   P   S   M   Crateria<-6,Brinstar->3
+3) 7ED872?? (Max: EF)   S   R   M   M   -   M   M   C   Brinstar
+4) 7ED873?? (Max: FF)   P   M  MB   P   M   E   E   S   Brinstar
+5) 7ED874?? (Max: FE)   -   E   M   E   M   M   X   P   Brinstar
+6) 7ED875?? (Max: 1F)   P   M  SZ   E   M   -   -   -   Brinstar
+7) 7ED876?? (Max: FF)   V   M   I   M   E   H   M   M   Brinstar<-1, Norfair->7
+8) 7ED877?? (Max: FF)   E   P   M   M  GB   R   M   M   Norfair
+9) 7ED878?? (Max: DF)   M   M  SP   M   W   -   M   S   Norfair
+0) 7ED879?? (Max: FE)   -   M   M   P   P   M   E  SA   Norfair
+A) 7ED87A?? (Max: 01)   E   -   -   -   -   -   -   -   Norfair
+B) 7ED880?? (Max: FF)   M   R   M   M   E   S   S   G   Wrecked Ship
+C) 7ED881?? (Max: FF)   M   S   E   M   S   M   M  PL   Maridia
+D) 7ED882?? (Max: FF)   M   R   M   P   M   S  SB   M   Maridia
+E) 7ED883?? (Max: 05)   E   -  SJ   -   -   -   -   -   Maridia
+
+KEY:
+     M: Missile Tank         S: Super Missile Tank     P: Power Bomb Tank
+
+                 E: Energy Tank          V: Varia Suit
+                 R: Reserve Tank         G: Gravity Suit
+
+                GB: Grappling Beam      MB: Morphing Ball
+                 X: X-Ray Scope          B: Bomb
+                                        SB: Spring Ball
+                 C: Charge              SA: Screw Attack
+                 I: Ice Beam
+                 W: Wave Beam            H: Hi-Jump Boots
+                SZ: Spazer              SJ: Space Jump
+                PL: Plasma              SP: Speed Booster
+
+
+                      ___________________________________
+                     /                                   \
+         ============          2. Movement [4B2]          ============
+                     \___________________________________/
+
+There are many conditions to be into perspective for the full description of
+effects of some movement PAR codes. I only provide with broad descriptions,
+so feel free to have fun and experiment with them! Just keep in mind the risks
+of getting stuck and the game possibly glitching or freezing
+
+-------------------------------------------------------------------------------
+                                            PAR Code     Range
+-------------------------------------------------------------------------------
+1) Hurt Timer                               7E18AA??     0 - 65535
+                                            7E18AB??     (00 00 - FF FF)
+00: Samus will not get knocked back. 
+01+: If you input and enable the code while not already hit then Samus
+     will get knocked back.
+     - While not in ball form you can escape from the hurt stuck position with
+       doing the enemy knockback glitch.
+     - While in ball form you can escape by using the X-Ray Scope while
+       crouching. You cannot bomb jump with this on. There are some movement
+       abnormalities you can abuse with this on, such as when landing in ball
+       form, Samus can float in air by rolling off the platform she is on.
+
+-------------------------------------------------------------------------------
+a. Position                                 PAR Code     Range
+-------------------------------------------------------------------------------
+1) X Position                               7E0AF6??     0 - 65535
+                                            7E0AF7??     (00 00 - FF FF)
+
+2) Y Position                               7E0AF8??     0 - 65535
+                                            7E0AF9??     (00 00 - FF FF)
+
+3) Distance from Door from Exiting          7E092D??     0 - 65535
+                                            7E092E??     (00 00 - FF FF)
+Based on the direction Samus is exiting from the door. Only a small number is
+needed to even go a great direction. This is calculated on pixels per frame of
+room transition movement.
+
+4) Quicker Door Transition                  7EC4000E
+You may need to disable this when you are not in the main game. This may cause
+some graphical glitching with enemies or the background.
+
+5) On Ground                                7E0B36??     00 - On Ground
+This is used for the game's checking if Samus is on      01 - Moving Up
+the ground or in the air. With 01 Samus can float.       02 - Moving Down
+
+-------------------------------------------------------------------------------
+b. Speed                                    PAR Code     Range
+-------------------------------------------------------------------------------
+1) Quicksand-Like Horizontal Speed          7E0A66??     00 - 04
+This has an effect like quicksand, water without the Gravity Suit, and lava
+without the Varia Suit. This slows movement and the distance for Speed Booster
+does not decrease as much as movement speed. The greater the amount the slower
+the movement speed
+
+2) Horizontal 'Momentum' Forward            7E0B46??     0 - 255 (00 - FF)
+This is the speed Samus moves when left or right is released from the
+directional pad when on ground. The value normally decreases. 00 is the slowest
+movement forward. Setting it too high will result in Samus falling into the
+ground. Setting to less than 0F seems to be the safe zone when having normal
+movement speed.
+
+3) Horizontal 'Momentum' & Speed            7E0B4A??     00 - 02
+00 - This has somewhat a similar effect as #2.
+01 - Samus cannot move without running. Running is slower, which allows to get
+the blue suit in a shorter distance. In the game this value is normally set
+when Samus is turning to face the opposing direction.
+02 - This has the same effect as 01 when on the ground but in air Samus will
+continually move forward in the direction she is facing. In the game this
+value is set as soon as Samus slows in horizontal movement with releasing the
+directional pad until she has fully stopped movement.
+
+4) Horizontal Speed Forward                 7E0B42??     0 - 255 (00 - FF)
+This is normally used when Samus gains movement speed (often by the Speed
+Booster). Setting the value to more than 00 gives Samus a horizontal
+escalator effect when not moving horizontally. Setting it too high will result
+in Samus possibly getting stuck into the wall or ground. Setting to less than
+10 seems to be the safe zone.
+
+5) Vertical Speed (aka Moon Jump)           7E0B2E??     0 - 255 (00 - FF)
+This affects both vertical directions. Subsection Position (a) #5 affects the
+direction Samus is going vertically. Increasing the value increases the speed.
+Setting the value about 04 will not allow Samus to perform space jumping.
+Setting it too high will result in Samus possibly getting stuck into the wall
+or ground. Setting to less than 11 seems to be the safe zone.
+
+6) Run Faster                               9097AD45
+Samus must be on the ground and running to affect her running speed. The
+increased speed also increases the jump height. This however does not
+increase the distance to be able to get blue suit, meaning running distance
+is greatly increased to get the blue suit. There is the risk of Samus going
+in the ground after having stopped running.
+
+7) Keep Speed Turning while Spin Jumping    91F62522
+It is much more noticeable if Samus is moving faster while spin jumping.
+
+8) Keep Speed After Landing from Jump       91E9EC09
+                                            91E9EC0A
+Does not include falling without jump.
+
+9) Keep Speed After Landing from Fall       91E9F709
+                                            91EA010A
+Samus may get stuck in inclines. If you use #8 with this code then getting
+stuck seems much less likely to happen.
+
+0) Morph Ball Acceleration Rate             90A025??     0 - 255 (00 - FF)
+This only applies when Samus is on the ground with the morph ball. Setting
+too high will cause Samus to go through the ground. Setting to less than 0C
+seems to be the safe zone.
+
+A) Spring Ball in Air Acceleration Rate     90A031??     0 - 255 (00 - FF)
+This only applies when the Spring Ball is used and when in the air.
+
+-------------------------------------------------------------------------------
+c. Super Jump/Shinespark                    PAR Code     Range
+-------------------------------------------------------------------------------
+1) Super Jump Delay Timer                   7E0A68??     0 - 65535
+                                            7E0A69??     (00 00 - FF FF)
+The timer is also used by the crystal flash. Setting the value to more than 00
+enables super jumping. You might have to press down on the directional pad to
+be able to do a shinespark.
+
+2) Have Blue Suit                           7E0B3F04
+Setting the value to anything above 04 will have Samus with no blue suit but
+you still can do shinespark.
+
+3) Shortened Blue Suit Distance             7E0A9400
+This is normally the countdown for Samus's next frame. By setting this to 0
+are freezing it the distance needed to get the blue suit is decreased. You will
+also see Samus's animation go very quickly.
+
+4) Shinespark Timer                         7E0AA2??     0 - 65535
+                                            7E0AA3??     (00 00 - FF FF)
+The timer is used in both launch countdown and recovery (after crashing).
+The value cannot be frozen above 00 for recovery or Samus will be stuck.
+
+5) Vertical Shinespark Deals no Damage      90D0CEAD
+
+6) Diagonal Shinespark Deals no Damage      90D0FDAD
+
+7) Diagonal Shinespark Does Horizontal      90D0EFAD
+
+-------------------------------------------------------------------------------
+d. Elevator                                 PAR Code     Range
+-------------------------------------------------------------------------------
+1) Position on Elevator                     7E0E16??     00 - Not Standing On
+                                                         01 - Standing On
+- When Samus is standing on an idle elevator that can be moved and Samus is not
+  moving the value is set to 01.
+- Going into a room with the code on will have Samus automatically ride the
+  elevator. If the room does not have an elevator then Samus will just be
+  stuck.
+- When already in a room with an elevator, jumping then pressing down for a
+  down elevator might get Samus stuck - set #2 to 03 then to 00 after landing
+  to get unstuck.
+
+2) Elevator Direction                       7E0E18??     00 - Not Moving
+This only is affected in rooms with elevators.           01 - Leaving Room
+The value must be set to 00 for Samus to be able         02 - Entering Room
+to leave the elevator.                                   03 - Elevator to Rest
+ 
+-------------------------------------------------------------------------------
+e. Jumping                                      PAR Code
+-------------------------------------------------------------------------------
+1) Moon Jump                                    9090F780
+                                                9090F82E
+
+2) Mid-air Jumping                              9497B680
+Samus's descent is slowed.                      90E60C80
+
+3) Jump While in Walls                          94964400
+Useful when having both #2 and subsection Through Walls (f) #2 codes enabled.
+
+4) Easy Space Jumping                           90A4BEEA
+To do space jumping all you have to is hold the jump button. Falling down with
+the space jump in water is slower also. Sometimes after going through a door
+it may not work. To fix it, pause the game and unpause.
+
+5) Space Jump in Liquid without Gravity Suit    90A445EA
+It will show Samus still just doing a spin jump in water but Samus is actually
+space jumping.
+
+6) Wall Jump in Liquid without Gravity Suit     909ED302
+                                                909EDF03
+Samus is able to wall jump high in water without the Varia Suit equipped.
+
+7) Super Wall Jump                              909ED108
+The Gravity Suit must be equipped if in liquid. 909EDD0A
+
+-------------------------------------------------------------------------------
+f. Through Walls                                PAR Code
+-------------------------------------------------------------------------------
+1) Walk Through Walls                           948F4960
+
+2) Walk Through Walls 2                         94972680
+Samus must be in the air to be able to go through doors. Samus is not able to
+run.
+
+-------------------------------------------------------------------------------
+g. Damage                PAR Code             Max Code             Default
+-------------------------------------------------------------------------------
+1) Speed Running         A0A4B0?? & A0A4B1??  A0A4B1FF & A0A4B07F   500 (F4 01)
+2) Pseudo Screw Attack   A0A4CD?? & A0A4CE??  A0A4CDFF & A0A4CE7F   200 (C8 00)
+3) Screw Attack          A0A4C3?? & A0A4C4??  A0A4C3FF & A0A4C47F  2000 (D0 07)
+4) Speed Echoes          9386C1?? & 9386C2??  9386C2FF & 9386C17F  4096 (00 10)
+5) Shinespark            A0A4BB?? & A0A4BC??  A0A4BBFF & A0A4BC7F   300 (2C 01)
+
+Range: 0 - 32767 (00 00 - FF 7F)
+
+
+                      ___________________________________
+                     /                                   \
+         ============        3. Projectiles [4B3]         ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                            PAR Code     Max Code     Range
+-------------------------------------------------------------------------------
+1) Projectile Counter       7E0CCE??     7E0CCEFF     0 - 255 (00 - FF)
+The amount of projectiles in the air, visible within the screen range. The game
+normally only allows up to 5 projectiles from Samus to be shot on screen at
+once. More than 5 will have the latest projectile override the 5th projectile.
+
+2) Cooldown Timer           7E0CCC??     7E0CCCFF     0 - 65535
+                            7E0CCD??     7E0CCDFF     (00 00 - FF FF)
+The amount of time left to when Samus is able to shoot another shot. This also
+applies to bombs.
+
+3) Firing Direction         7E0B5E??                  00 - Up (Facing right)
+                                                      01 - Upright
+Enabling this PAR code will fire beams even           02 - Right
+if you are not pressing the shoot button except       03 - Downright
+if the value is set to 00.                            04 - Down (Facing right)
+                                                      05 - Down (Facing left)
+                                                      06 - Downleft
+                                                      07 - Left
+                                                      08 - Upleft
+                                                      09 - Up (Facing left)
+
+4) Charge State             7E0CD0??                  0 - 255 (00 - FF)
+Setting the value to 3C and above is when Samus can do a charged shot while
+everything below is a regular shot. This will keep firing if the shot button
+is not held. Setting the value to 78 and above will allow Samus to be able to
+perform a SBA. To do SBAs you are required to press the shoot button.
+
+5) Beam Less Acceleration   90B1C3EA
+The initial acceleration of beams are decreased. This does not affect missiles
+and super missiles.
+
+-------------------------------------------------------------------------------
+a. In Air        Projectile #: 1          2          3          4          5
+-------------------------------------------------------------------------------
+1) X Position              7E0B64??   7E0B66??   7E0B68??   7E0B6A??   7E0B6C??
+                           7E0B65??   7E0B67??   7E0B69??   7E0B6B??   7E0B6D??
+
+2) Y Position              7E0B78??   7E0B7A??   7E0B7C??   7E0B7E??   7E0B80??
+                           7E0B79??   7E0B7B??   7E0B7D??   7E0B7F??   7E0B81??
+
+3) X Radius                7E0BB4??   7E0BB6??   7E0BB8??   7E0BBA??   7E0BBC??
+                           7E0BB5??   7E0BB7??   7E0BB9??   7E0BBB??   7E0BBD??
+
+4) Y Radius                7E0BC8??   7E0BCA??   7E0BCC??   7E0BCE??   7E0BD0??
+                           7E0BC9??   7E0BCB??   7E0BCD??   7E0BCF??   7E0BD1??
+
+5) X Speed                 7E0BDC??   7E0BDE??   7E0BE0??   7E0BE2??   7E0BE4??
+                           7E0BDD??   7E0BDF??   7E0BE1??   7E0BE3??   7E0BE5??
+
+6) Y Speed                 7E0BF0??   7E0BF2??   7E0BF4??   7E0BF6??   7E0BF8??
+                           7E0BF1??   7E0BF3??   7E0BF5??   7E0BF7??   7E0BF9??
+
+7) Acceleration Direction  7E0C04??   7E0C06??   7E0C08??   7E0C0A??   7E0C0C??
+
+8) Does Damage             7E0C2C??   7E0C2E??   7E0C30??   7E0C32??   7E0C34??
+
+9) Type                    7E0C18??   7E0C1A??   7E0C1C??   7E0C1E??   7E0C20??
+                           7E0C19??   7E0C1B??   7E0C1D??   7E0C1F??   7E0C21??
+
+-------------------------------------------------------------------------------
+a. In Air (Cont.)   Max Code               Range
+-------------------------------------------------------------------------------
+1) X Position       7E0BXXFF & 7E0BXXFF    0 - 65535 (00 00 - FF FF)
+2) Y Position       7E0BXXFF & 7E0BXXFF    0 - 65535 (00 00 - FF FF)
+
+3) X Radius         7E0BXXFF & 7E0BXXFF    0 - 65535 (00 00 - FF FF)
+4) Y Radius         7E0XXXFF & 7E0XXXFF    0 - 65535 (00 00 - FF FF)
+A too great of radius will not allow the projectile to open the door unless
+Samus is directly in front of the door. Also, it does not apply to charged
+beams and the Hyper Beam.
+
+5) X Speed          7E0XXXFF & 7E0XXXFF    00 00 - FF 7F - Right (^ is Faster)
+                                               00 80     - Stuck/No Speed
+                                           01 80 - FF FF - Left (v is Faster)
+Below depicts the speed for values. The arrows show the direction of the shot.
+
+Slowest(0000) -> Fastest(FF7F), No speed(0080), Fastest(0180) <- Slowest(FFFF)
+
+6) Y Speed          7E0FXXFF & 7E0FXXFF    00 00 - FF 7F - Down (^ is Faster)
+                                               00 80     - Stuck/No Speed
+                                           01 80 - FF FF - Up (v is Faster)
+Below depicts the speed for values. The arrows show the direction of the shot.
+
+Slowest(0000) vv Fastest(FF7F), No speed(0080), Fastest(0180) ^^ Slowest(FFFF)
+
+7) Accelerating     7E0C0X??               00 - Up (Facing right)
+    Direction                              01 - Upright
+                                           02 - Right
+                                           03 - Downright
+                                           04 - Down
+                                           05 - Downleft
+                                           06 - Left
+                                           07 - Upleft
+                                           08 - Up (Facing left)
+
+8) Does Damage      7E0CXX??               00 - No
+                                           01 - Yes
+This does not affect shooting a target directly in front of Samus. Also,
+setting it to 00 risks the game freezing.
+
+9) Type             7E0CXX?? & 7E0CXX??    00 80 - Power Beam
+                                           01 80 - Wave Beam
+For power bombs the projectile             02 80 - Ice Beam
+is invisible and it does not hurt          04 80 - Spazer Beam
+enemies. It can be used to destroy         08 80 - Plasma Beam
+blocks and open yellow doors.
+For bombs/screw attack it destroys         10 80 - Charged Power
+blocks but does not hurt enemies.          11 80 - Charged Wave/SBA
+                                           12 80 - Charged Ice/SBA
+                                           14 80 - Charged Spazer/SBA
+                                           18 80 - Charged Plasma/SBA & Hyper
+
+                                           00 81 - Missile
+                                           00 82 - Super Missile
+                                           00 83 - Power Bomb 
+                                           00 85 - Bomb/Screw Attack
+
+-------------------------------------------------------------------------------
+b. Damage                  PAR Code             Max Code             Default
+-------------------------------------------------------------------------------
+1) Power Beam              938431?? & 938432??  938431FF & 9384327F   20 (1400)
+2) Wave Beam               9384B5?? & 9384B6??  9384B5FF & 9384B67F   50 (3200)
+3) Ice Beam                93849F?? & 9384A0??  93849FFF & 9384A07F   30 (1E00)
+4) Wave & Ice              9384E1?? & 9384E2??  9384E1FF & 9384E27F   60 (3C00)
+5) Spazer Beam             938447?? & 938448??  938447FF & 9384487F   40 (2800)
+6) Spazer & Wave           9384F7?? & 9384F8??  9384F7FF & 9384F97F   70 (4600)
+7) Spazer & Ice            93845D?? & 93845D??  93845DFF & 93845D7F   60 (3C00)
+8) Spazer & Wave & Ice     938473?? & 938474??  938473FF & 9384747F  100 (6400)
+9) Plasma Beam             9384CB?? & 9384CC??  9384CBFF & 9384CC7F  150 (9600)
+0) Plasma & Wave           93850D?? & 93850E??  93850DFF & 93850E7F  250 (FA00)
+A) Plasma & Ice            938523?? & 938524??  938523FF & 9385247F  200 (C800)
+B) Plasma & Wave & Ice     938489?? & 93848A??  938489FF & 93848A7F  300 (2C01)
+C) Plasma & Spazer         938539?? & 93853A??  938539FF & 93853A7F   60 (3C00)
+D) Plasma & Spazer & Wave  9385D3?? & 9385D4??  9385D3FF & 9385D47F  150 (9600)
+E) Plasma & Spazer & Ice   9385A7?? & 9385A8??  9385A7FF & 9385A87F   90 (5A00)
+F) Pl & Sp & Wave & Ice    9385E9?? & 9385EA??  9385E9FF & 9385EA7F  180 (B400)
+
+G) Charged Power Beam      938539?? & 93853A??  938539FF & 93853A7F   60 (3C00)
+H) Charged Wave            9385D3?? & 9385D4??  9385D3FF & 9385D47F  150 (9600)
+I) Charged Ice             9385A7?? & 9385A8??  9385A7FF & 9385A87F   90 (5A00)
+J) Charged Wave & Ice      9385E9?? & 9385EA??  9385E9FF & 9385EA7F  180 (B400)
+K) Charged Spazer          93854F?? & 938550??  93854FFF & 9385507F  120 (7800)
+L) Charged Spazer & Wave   9385FF?? & 938600??  9385FFFF & 9386007F  210 (D200)
+M) Charged Spazer & Ice    938565?? & 938566??  938565FF & 9385667F  180 (B400)
+N) Charged Sp & Wa & Ice   93857B?? & 93857C??  93857BFF & 93857C7F  300 (2C01)
+
+O) Charged Plasma          9385BD?? & 9385BE??  9385BDFF & 9385BE7F  450 (C201)
+P) Charged Plasma & Wave   93862B?? & 93862C??  93862BFF & 93862C7F  750 (EE02)
+Q) Charged Plasma & Ice    938615?? & 938616??  938615FF & 9386167F  600 (5802)
+R) Charged Pl & Wa & Ice   938591?? & 938592??  938591FF & 9385927F  900 (8403)
+S) Charged Pl & Sp         938641?? & 938642??  938641FF & 9386427F  100 (6400)
+T) Charged Pl & Sp & Ice   938657?? & 938658??  938657FF & 9386587F  300 (2C01)
+U) Chgd Pl & Sp & Wa & Ic  938671?? & 938672??  938671FF & 9386727F  200 (C800)
+
+V) Hyper Beam              9385BD?? & 9385BE??  9385BDFF & 9385BE7F  450 (C201)
+
+W) Wave SBA                938689?? & 93868A??  938689FF & 93868A7F  300 (2C01)
+X) Ice SBA                 9385A7?? & 9385A8??  9385A7FF & 9385A87F   90 (5A00)
+Y) Spazer SBA              9386AB?? & 9386AC??  9386ABFF & 9386AC7F  300 (2C01)
+Z) Plasma SBA              938685?? & 938686??  938685FF & 9386867F  300 (2C01)
+
+a) Missile                 938641?? & 938642??  938641FF & 9386427F  100 (6400)
+b) Super Missile           938657?? & 938658??  938657FF & 9386587F  300 (2C01)
+
+Range: 0 - 32767 (00 00 - FF 7F)
+
+*EIX, CG, FJ, Sa, Tb, Uc, OV, DH: For these ones that are grouped, they share
+the same PAR code, meaning modifying for one will also modify for the the rest.
+For example: If you wanted to modify the Hyper Beam damage (V) then you will
+also be modifying the charged Plasma Beam damage (O).
+
+-------------------------------------------------------------------------------
+c. SBA Time           PAR Code                   Max Code 
+-------------------------------------------------------------------------------
+1) SBA 1 Timer        7E0BF0?? & 7E0BF1??        7E0BF0FF & 7E0BF1FF
+2) SBA 2 Timer        7E0BF2?? & 7E0BF3??        7E0BF2FF & 7E0BF3FF
+3) SBA 3 Timer        7E0BF4?? & 7E0BF5??        7E0BF4FF & 7E0BF5FF
+4) SBA 4 Timer        7E0BF6?? & 7E0BF7??        7E0BF6FF & 7E0BF7FF
+
+Range: 0 - 65535 (00 00 - FF FF)
+
+Each SBA uses subsection In Air (a) #6 as the timer. When the SBA is 0 and
+flies out then subsection In Air (a) #5 is used.
+
+
+                      ___________________________________
+                     /                                   \
+         ============           4. Bombs [4B4]            ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                                     PAR Code    Max Code    Range
+-------------------------------------------------------------------------------
+1) Bomb Placed Counter               7E0CD2??    7E0CD205    00 - 05
+- The maximum amount of bombs allowed to be set is 5 (though this code is only
+a counter to see how many have been placed). Placing more than 5 on screen
+results in the newest placed bomb overwriting the 5th one.
+- When the value is set to 0 then bomb jumping is not possible. In turn, in
+order to do the multi-bomb drop the value has to be 0.
+- Only 1 power bomb can ever exist (but is not affected by this PAR code).
+
+2) Bomb Placement Cooldown Timer     7E0CCC??    7E0CCCFF    0 - 65535
+                                     7E0CCD??    7E0CCDFF     (00 00 - FF FF)
+The amount of time left to when you can lay another bomb. This also applies
+to projectiles. This does not apply to power bombs.
+
+3) Bomb Jump Strength                909EF5??    909EF5FF    0 - 255 (00 - FF)
+Normal bomb jump strength is 2. Setting to too high will cause Samus to go
+through walls. Setting the value to 10 seems safest for the strength.
+
+4) Bomb Jump Strength in Liquid      909EF7??    909EF7FF    0 - 255 (00 - FF)
+This only applies when Samus is not equipped with the Gravity Suit. Normal bomb
+jump strength is 0. Setting to too high will cause Samus to go through walls.
+Setting the value to 10 seems safest for the strength.
+
+-------------------------------------------------------------------------------
+a. Laid           Bomb #: 1          2          3          4          5
+-------------------------------------------------------------------------------
+1) X Position          7E0B6E??   7E0B70??   7E0B72??   7E0B74??   7E0B76??
+                       7E0B6F??   7E0B71??   7E0B73??   7E0B75??   7E0B77??
+
+2) Y Position          7E0B82??   7E0B84??   7E0B86??   7E0B88??   7E0B8A??
+                       7E0B83??   7E0B85??   7E0B87??   7E0B89??   7E0B8B??
+
+3) X Radius            7E0BBE??   7E0BC0??   7E0BC2??   7E0BC4??   7E0BC6??
+                       7E0BBF??   7E0BC1??   7E0BC3??   7E0BC5??   7E0BC7??
+
+4) Y Radius            7E0BD2??   7E0BD4??   7E0BD6??   7E0BD8??   7E0BDA??
+                       7E0BD3??   7E0BD5??   7E0BD7??   7E0BD9??   7E0BDB??
+
+5) X Moving Speed      7E0BE6??   7E0BE8??   7E0BEA??   7E0BEC??   7E0BEE??
+                       7E0BE7??   7E0BE9??   7E0BEB??   7E0BED??   7E0BEF??
+
+6) Y Moving Speed      7E0BFA??   7E0BFC??   7E0BFE??   7E0C00??   7E0C02??
+                       7E0BFB??   7E0BFD??   7E0BFF??   7E0C01??   7E0C03??
+
+7) Timer               7E0C86??   7E0C88??   7E0C8A??   7E0C8C??   7E0C8E??
+                       7E0C87??   7E0C89??   7E0C8B??   7E0C8D??   7E0C8F??
+
+8) Type                7E0C72??   7E0C74??   7E0C76??   7E0C78??   7E0C7A??
+                       7E0C73??   7E0C75??   7E0C77??   7E0C79??   7E0C7B??
+
+9) Damage              7E0C36??   7E0C38??   7E0C3A??   7E0C3C??   7E0C3E??
+                       7E0C37??   7E0C39??   7E0C3B??   7E0C3D??   7E0C3F??
+
+Bomb # depends on what order they were placed on the field. Multi-bomb spread
+bomb order is (as normally appeared in the game): #1 - center left, #2 - left,
+#3 - center, #4 - right, #5 - center right.
+
+-------------------------------------------------------------------------------
+a. Laid (Cont.)      Max Code               Range
+-------------------------------------------------------------------------------
+1) X Position        7E0BXXFF & 7E0BXXFF    0 - 65535 (00 00 - FF FF)
+2) Y Position        7E0B8XFF & 7E0B8XFF    0 - 65535 (00 00 - FF FF)
+
+3) X Radius          7E0BXXFF & 7E0BXXFF    0 - 65535 (00 00 - FF FF)
+4) Y Radius          7E0BDXFF & 7E0BDXFF    0 - 65535 (00 00 - FF FF)
+The value will change if regular bombs explode. It is best to freeze the code,
+if possible. This just affects enemies.
+
+5) X Moving Speed    7E0BEX?? & 7E0BEX??    00 00 - FF 7F - Right (^ is Faster)
+                                                00 80     - Stuck/No Speed
+                                            01 80 - FF FF - Left (^ is Faster)
+This only applies to when bombs are moving. Below depicts the speed for values.
+The arrows show the direction of the bomb.
+
+Slowest(0000) -> Fastest(FF7F), No speed(0080), Slowest(0180) <- Fastest(FFFF)
+
+
+6) Y Moving Speed    7E0XXX?? & 7E0XXX??    00 00 - FF 7F - Down (^ is Faster)
+                                                00 80     - Stuck/No Speed
+                                            01 80 - FF FF - Up (v is Faster)
+This only applies to when bombs are moving. Below depicts the speed for values.
+The arrows show the direction of the bomb.
+
+Slowest(0000) vv Fastest(FF7F), No speed(0080), Fastest(0180) ^^ Slowest(FFFF)
+
+It is recommended to not go far from the slowest speed since it goes much
+faster after a few numbers higher/lower.
+
+7) Timer             7E0C8XFF & 7E0C8XFF    0 - 65535 (0000 - FF FF)
+Countdown time until when the bomb explodes.
+
+8) Type              7E0C7X?? & 7E0C7X??    69 B1 - Still Bomb
+                                            99 B0 - Active Bomb
+                                            AE B0 - Power Bomb
+                                            F7 D8 - Moving Bomb
+
+9) Damage            7E0C3XFF & 7E0C3XFF    0 - 65535 (0000 - FF FF)
+               
+-------------------------------------------------------------------------------
+b. Damage           PAR Code               Max Code               Default
+-------------------------------------------------------------------------------
+1) Bomb             938675?? & 938676??    938675FF & 9386767F     30 (1E 00)
+2) Power Bomb       938671?? & 938672??    938671FF & 9386727F    200 (C8 00)
+
+Range: 0 - 32767 (00 00 - FF 7F)
+
+-------------------------------------------------------------------------------
+c. Power Bomb                          PAR Code    Max Code    Range
+-------------------------------------------------------------------------------
+1) Power Bomb Laid                     7E0CEE??                00 00 - No
+                                       7E0CEF??                FF FF - Yes
+The graphics will glitch if you place power bombs too quickly. Nevertheless,
+this gives you the opportunity you forever wanted to do the power bomb jump!
+
+2) Explosion Origin X Position         7E0CE2??    7E0CE2FF    0 - 65535
+                                       7E0CE3??    7E0CE3FF    (00 00 - FF FF)
+
+3) Explosion Origin Y Position         7E0CE4??    7E0CE4FF    0 - 65535
+                                       7E0CE5??    7E0CE5FF    (00 00 - FF FF)
+
+4) Explosion Radius                    7E0CEA??    7E0CEAFF    0 - 65535
+                                       7E0CEB??    7E0CEBFF    (00 00 - FF FF)
+
+5) Explosion Radius Speed              7E0CF0??    7E0CF0FF    0 - 65535
+                                       7E0CF1??    7E0CF1FF    (00 00 - FF FF)
+Setting too high value makes the bomb not do any damage.
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   C. Enemies & Bosses [4C]                                                <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+Minibosses and bosses (except for Mother Brain) are usually allocated to
+Enemy 1, as they are the first (and commonly only) enemy to be loaded into
+memory for the room.
+
+-------------------------------------------------------------------------------
+Enemies 1-6          Enemy 01  Enemy 02  Enemy 03  Enemy 04  Enemy 05  Enemy 06
+-------------------------------------------------------------------------------
+1) Health            7E0F8C??  7E0FCC??  7E100C??  7E104C??  7E108C??  7E10CC??
+                     7E0F8D??  7E0FCD??  7E100D??  7E104D??  7E108D??  7E10CD??
+
+2) X Position        7E0F7A??  7E0FBA??  7E0FFA??  7E103A??  7E107A??  7E10BA??
+                     7E0F7B??  7E0FBB??  7E0FFB??  7E103B??  7E107B??  7E10BB??
+
+3) Y Position        7E0F7E??  7E0FBE??  7E0FFE??  7E103E??  7E107E??  7E10BE??
+                     7E0F7F??  7E0FBF??  7E0FFF??  7E103F??  7E107F??  7E10BF??
+
+4) Collision Width   7E0F82??  7E0FC2??  7E1002??  7E1042??  7E1082??  7E10C2??
+                     7E0F83??  7E0FC3??  7E1003??  7E1043??  7E1083??  7E10C3??
+
+5) Collision Height  7E0F84??  7E0FC4??  7E1004??  7E1044??  7E1084??  7E10C4??
+                     7E0F85??  7E0FC5??  7E1005??  7E1045??  7E1085??  7E10C5??
+
+6) Hurt Flash Timer  7E0F9C??  7E0FDC??  7E101C??  7E105C??  7E109C??  7E10DC??
+                     7E0F9D??  7E0FDD??  7E101D??  7E105D??  7E109D??  7E10DD??
+
+7) Frozen Timer      7E0F9E??  7E0FDE??  7E101E??  7E105E??  7E109E??  7E10DE??
+                     7E0F9F??  7E0FDF??  7E101F??  7E105F??  7E109F??  7E10DF??
+
+8) Properties        7E0F87??  7E0FC7??  7E1007??  7E1047??  7E1087??  7E10C7??
+
+9) Speed             7E0FB4??  7E0FF4??  7E1034??  7E1074??  7E10B4??  7E10F4??
+                     7E0FB5??  7E0FF5??  7E1035??  7E1075??  7E10B5??  7E10F5??
+
+0) Speed 2           7E0FB6??  7E0FF6??  7E1036??  7E1076??  7E10B6??  7E10F6??
+                     7E0FB7??  7E0FF7??  7E1037??  7E1077??  7E10B7??  7E10F7??
+
+-------------------------------------------------------------------------------
+Enemies 7-12         Enemy 07  Enemy 08  Enemy 09  Enemy 10  Enemy 11  Enemy 12
+-------------------------------------------------------------------------------
+1) Health            7E110C??  7E114C??  7E118C??  7E11CC??  7E120C??  7E124C??
+                     7E110D??  7E114D??  7E118D??  7E11CD??  7E120D??  7E124D??
+
+2) X Position        7E10FA??  7E113A??  7E117A??  7E11BA??  7E11FA??  7E123A??
+                     7E10FB??  7E113B??  7E117B??  7E11BB??  7E11FB??  7E123B??
+
+3) Y Position        7E10FE??  7E113E??  7E117E??  7E11BE??  7E11FE??  7E123E??
+                     7E10FF??  7E113F??  7E117F??  7E11BF??  7E11FF??  7E123F??
+
+4) Collision Width   7E1102??  7E1142??  7E1182??  7E11C2??  7E1202??  7E1242??
+                     7E1103??  7E1143??  7E1183??  7E11C3??  7E1203??  7E1243??
+
+5) Collision Height  7E1104??  7E1144??  7E1184??  7E11C4??  7E1204??  7E1244??
+                     7E1105??  7E1145??  7E1185??  7E11C5??  7E1205??  7E1245??
+
+6) Hurt Flash Timer  7E111C??  7E115C??  7E119C??  7E11DC??  7E121C??  7E125C??
+                     7E111D??  7E115D??  7E119D??  7E11DD??  7E121D??  7E125D??
+
+7) Frozen Timer      7E111E??  7E115E??  7E119E??  7E11DE??  7E121E??  7E125E??
+                     7E111F??  7E115F??  7E119F??  7E11DF??  7E121F??  7E125F??
+
+8) Properties        7E1107??  7E1147??  7E1187??  7E11C7??  7E1207??  7E1247??
+
+9) Speed             7E1134??  7E1174??  7E11B4??  7E11F4??  7E1234??  7E1274??
+                     7E1135??  7E1175??  7E11B5??  7E11F5??  7E1235??  7E1275??
+
+0) Speed 2           7E1136??  7E1176??  7E11B6??  7E11F6??  7E1236??  7E1276??
+                     7E1137??  7E1177??  7E11B7??  7E11F7??  7E1237??  7E1277??
+
+-------------------------------------------------------------------------------
+Enemies 13-18        Enemy 13  Enemy 14  Enemy 15  Enemy 16  Enemy 17  Enemy 18
+-------------------------------------------------------------------------------
+1) Health            7E128C??  7E12CC??  7E130C??  7E134C??  7E138C??  7E13CC??
+                     7E128D??  7E12CD??  7E130D??  7E134D??  7E138D??  7E13CD??
+
+2) X Position        7E127A??  7E12BA??  7E12FA??  7E133A??  7E137A??  7E13BA??
+                     7E127B??  7E12BB??  7E12FB??  7E133B??  7E137B??  7E13BB??
+
+3) Y Position        7E127E??  7E12BE??  7E12FE??  7E133E??  7E137E??  7E13BE??
+                     7E127F??  7E12BF??  7E12FF??  7E133F??  7E137F??  7E13BF??
+
+4) Collision Width   7E1282??  7E12C2??  7E1302??  7E1342??  7E1382??  7E13C2??
+                     7E1283??  7E12C3??  7E1303??  7E1343??  7E1383??  7E13C3??
+
+5) Collision Height  7E1284??  7E12C4??  7E1304??  7E1344??  7E1384??  7E13C4??
+                     7E1285??  7E12C5??  7E1305??  7E1345??  7E1385??  7E13C5??
+
+6) Hurt Flash Timer  7E129C??  7E12DC??  7E131C??  7E135C??  7E139C??  7E13DC??
+                     7E129D??  7E12DD??  7E131D??  7E135D??  7E139D??  7E13DD??
+
+7) Frozen Timer      7E129E??  7E12DE??  7E131E??  7E135E??  7E139E??  7E13DE??
+                     7E129F??  7E12DF??  7E131F??  7E135F??  7E139F??  7E13DF??
+
+8) Properties        7E1287??  7E12C7??  7E1307??  7E1347??  7E1387??  7E13C7??
+
+9) Speed             7E12B4??  7E12F4??  7E1334??  7E1374??  7E13B4??  7E13F4??
+                     7E12B5??  7E12F5??  7E1335??  7E1375??  7E13B5??  7E13F5??
+
+0) Speed 2           7E12B6??  7E12F6??  7E1336??  7E1376??  7E13B6??  7E13F6??
+                     7E12B7??  7E12F7??  7E1337??  7E1377??  7E13B7??  7E13F7??
+
+-------------------------------------------------------------------------------
+Enemies 19-24        Enemy 19  Enemy 20  Enemy 21  Enemy 22  Enemy 23  Enemy 24
+-------------------------------------------------------------------------------
+1) Health            7E140C??  7E144C??  7E148C??  7E14CC??  7E150C??  7E154C??
+                     7E140D??  7E144D??  7E148D??  7E14CD??  7E150D??  7E154D??
+
+2) X Position        7E13FA??  7E143A??  7E147A??  7E14BA??  7E14FA??  7E153A??
+                     7E13FB??  7E143B??  7E147B??  7E14BB??  7E14FB??  7E153B??
+
+3) Y Position        7E13FE??  7E143E??  7E147E??  7E14BE??  7E14FE??  7E153E??
+                     7E13FF??  7E143F??  7E147F??  7E14BF??  7E14FF??  7E153F??
+
+4) Collision Width   7E1402??  7E1442??  7E1482??  7E14C2??  7E1502??  7E1542??
+                     7E1403??  7E1443??  7E1483??  7E14C3??  7E1503??  7E1543??
+
+5) Collision Height  7E1404??  7E1444??  7E1484??  7E14C4??  7E1504??  7E1544??
+                     7E1405??  7E1445??  7E1485??  7E14C5??  7E1505??  7E1545??
+
+6) Hurt Flash Timer  7E141C??  7E145C??  7E149C??  7E14DC??  7E151C??  7E155C??
+                     7E141D??  7E145D??  7E149D??  7E14DD??  7E151D??  7E155D??
+
+7) Frozen Timer      7E141E??  7E145E??  7E149E??  7E14DE??  7E151E??  7E155E??
+                     7E141F??  7E145F??  7E149F??  7E14DF??  7E151F??  7E155F??
+
+8) Properties        7E1407??  7E1447??  7E1487??  7E14C7??  7E1507??  7E1547??
+
+9) Speed             7E1434??  7E1474??  7E14B4??  7E14F4??  7E1534??  7E1574??
+                     7E1435??  7E1475??  7E14B5??  7E14F5??  7E1535??  7E1575??
+
+0) Speed 2           7E1436??  7E1476??  7E14B6??  7E14F6??  7E1536??  7E1576??
+                     7E1437??  7E1477??  7E14B7??  7E14F7??  7E1537??  7E1577??
+
+-------------------------------------------------------------------------------
+Enemies 25-30        Enemy 25  Enemy 26  Enemy 27  Enemy 28  Enemy 29  Enemy 30
+-------------------------------------------------------------------------------
+1) Health            7E158C??  7E15CC??  7E160C??  7E164C??  7E168C??  7E16CC??
+                     7E158D??  7E15CD??  7E160D??  7E164D??  7E168D??  7E16CD??
+
+2) X Position        7E157A??  7E15BA??  7E15FA??  7E163A??  7E167A??  7E16BA??
+                     7E157B??  7E15BB??  7E15FB??  7E163B??  7E167B??  7E16BB??
+
+3) Y Position        7E157E??  7E15BE??  7E15FE??  7E163E??  7E167E??  7E16BE??
+                     7E157F??  7E15BF??  7E15FF??  7E163F??  7E167F??  7E16BF??
+
+4) Collision Width   7E1582??  7E15C2??  7E1602??  7E1642??  7E1682??  7E16C2??
+                     7E1583??  7E15C3??  7E1603??  7E1643??  7E1683??  7E16C3??
+
+5) Collision Height  7E1584??  7E15C4??  7E1604??  7E1644??  7E1684??  7E16C4??
+                     7E1585??  7E15C5??  7E1605??  7E1645??  7E1685??  7E16C5??
+
+6) Hurt Flash Timer  7E159C??  7E15DC??  7E161C??  7E165C??  7E169C??  7E16DC??
+                     7E159D??  7E15DD??  7E161D??  7E165D??  7E169D??  7E16DD??
+
+7) Frozen Timer      7E159E??  7E15DE??  7E161E??  7E165E??  7E169E??  7E16DE??
+                     7E159F??  7E15DF??  7E161F??  7E165F??  7E169F??  7E16DF??
+
+8) Properties        7E1587??  7E15C7??  7E1607??  7E1647??  7E1687??  7E16C7??
+
+9) Speed             7E15B4??  7E15F4??  7E1634??  7E1674??  7E16B4??  7E16F4??
+                     7E15B5??  7E15F5??  7E1635??  7E1675??  7E16B5??  7E16F5??
+
+0) Speed 2           7E15B6??  7E15F6??  7E1636??  7E1676??  7E16B6??  7E16F6??
+                     7E15B7??  7E15F7??  7E1637??  7E1677??  7E16B7??  7E16F7??
+
+-------------------------------------------------------------------------------
+Enemies 31-32        Enemy 31  Enemy 32    Max Code   Range
+-------------------------------------------------------------------------------
+1) Health            7E170C??  7E174C??    7EXXXCFF   0 - 65535 (00 00 - FF FF)
+                     7E170D??  7E174D??    7EXXXDFF
+
+2) X Position        7E16FA??  7E173A??    7EXXXAFF   0 - 65535 (00 00 - FF FF)
+                     7E16FB??  7E173B??    7EXXXBFF
+
+3) Y Position        7E16FE??  7E173E??    7EXXXEFF   0 - 65535 (00 00 - FF FF)
+                     7E16FF??  7E173F??    7EXXXFFF
+
+4) Collision Width   7E1702??  7E1742??    7EXXX2FF   0 - 65535 (00 00 - FF FF)
+                     7E1703??  7E1743??    7EXXX3FF
+
+5) Collision Height  7E1704??  7E1744??    7EXXX4FF   0 - 65535 (00 00 - FF FF)
+                     7E1705??  7E1745??    7EXXX5FF
+
+6) Hurt Flash Timer  7E171C??  7E175C??    7EXXXCFF   0 - 65535 (00 00 - FF FF)
+                     7E171D??  7E175D??    7EXXXDFF
+
+7) Frozen Timer      7E171E??  7E175E??    7EXXXEFF   0 - 65535 (00 00 - FF FF)
+                     7E171F??  7E175F??    7EXXXFFF   When timer>0,enemy frozen
+
+8) Properties        7E1707??  7E1747??               20 - None/Default
+                                                      01 - Invisible (can hurt
+                                                                      Samus)
+                                                      02 - Deleted (cannot
+                                                                    hurt Samus)
+                                                      04 - Non-responsive
+                                                            (ignore
+                                                             Samus/projectiles)
+                                                      08 - Move offscreen
+                                                             (process even when
+                                                              offscreen)
+                                                      10 - Stop plasma (blocks
+                                                                  plasma shots)
+                                                      40 - Respawn
+                                                      80 - Platform (makes
+                                                         hitbox solid to Samus)
+
+9) Speed             7E1734??  7E1774??
+                     7E1735??  7E1775??
+
+0) Speed 2           7E1736??  7E1776??
+                     7E1737??  7E1777??
+For both speeds the exact effect varies on the type of enemy. It may be for
+which direction the enemy is moving, distance it covers, number of hits it
+takes to kill/destroy, movement delay, or even the actual constant movement
+speed. No more information is provided within this document, so use at your own
+risk.
+
+
+                      ___________________________________
+                     /                                   \
+         ============        1. Current Room [4C1]        ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                        PAR Code                 Max Code
+-------------------------------------------------------------------------------
+1) # Killed             7E0E50?? & 7E0E51??      7E0E50FF & 7E0E51FF
+
+2) # Needed to Kill     7E0E52?? & 7E0E53??      7E0E52FF & 7E0E53FF
+
+-------------------------------------------------------------------------------
+a. Drop Timer           PAR Code                 Max Code
+-------------------------------------------------------------------------------
+1) 1st                  7E1B45?? & 7E1B46??      7E1B45FF & 7E1B46FF
+2) 2nd                  7E1B43?? & 7E1B44??      7E1B43FF & 7E1B44FF
+3) 3rd                  7E1B41?? & 7E1B42??      7E1B41FF & 7E1B42FF
+4) 4th                  7E1B3F?? & 7E1B40??      7E1B3FFF & 7E1B40FF
+5) 5th                  7E1B3D?? & 7E1B3E??      7E1B3DFF & 7E1B3EFF
+6) 6th                  7E1B3B?? & 7E1B3C??      7E1B3BFF & 7E1B3CFF
+7) 7th                  7E1B39?? & 7E1B3A??      7E1B39FF & 7E1B3AFF
+8) 8th                  7E1B37?? & 7E1B38??      7E1B37FF & 7E1B38FF
+9) 9th                  7E1B35?? & 7E1B36??      7E1B35FF & 7E1B36FF
+0) 10th                 7E1B33?? & 7E1B34??      7E1B33FF & 7E1B34FF
+A) 11th                 7E1B31?? & 7E1B32??      7E1B31FF & 7E1B32FF
+B) 12th                 7E1B2F?? & 7E1B30??      7E1B2FFF & 7E1B30FF
+C) 13th                 7E1B2D?? & 7E1B2E??      7E1B2DFF & 7E1B2EFF
+D) 14th                 7E1B2B?? & 7E1B2C??      7E1B2BFF & 7E1B2CFF
+E) 15th                 7E1B29?? & 7E1B2A??      7E1B29FF & 7E1B2AFF
+F) 16th                 7E1B27?? & 7E1B28??      7E1B27FF & 7E1B28FF
+G) 17th                 7E1B25?? & 7E1B26??      7E1B25FF & 7E1B26FF
+H) 18th                 7E1B23?? & 7E1B24??      7E1B23FF & 7E1B24FF
+
+Drops are in sequential order as they appear.
+
+
+                      ___________________________________
+                     /                                   \
+         ============         2. Boss Fight [4C2]         ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                                       PAR Code   Max Code   Range
+-------------------------------------------------------------------------------
+1) Space Colony Ridley Shots Taken     7E781A??   7E781A64   0 - 100 (00 - 64)
+As Ridley cannot be killed in the beginning sequence, a separate code is
+used to track the amount of times Ridley was hit. Ridley takes 100 shots before
+flying off.
+
+2) Drops after Boss Defeat             7E0E1A??              00 - Various
+                                                             01 - All Energy
+Triggers more energy drops if Samus is low on health. This normally turns on if
+Samus's health drops below 30 and turns off if at least 50. Also, it normally
+turns on or off when an item drop appears on screen.
+
+
+                      ___________________________________
+                     /                                   \
+         ============       3. Bosses Defeated [4C3]      ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                      PAR Code     Max Code      Range
+-------------------------------------------------------------------------------
+1) Crateria           7ED828??     7ED82804      04 - Silver Torizo (Miniboss)
+
+2) Brinstar           7ED829??     7ED82903      01 - Kraid (Boss)
+                                                 02 - Spore Spawn (Miniboss)
+
+3) Norfair            7ED82A??     7ED82A07      01 - Ridley (Boss)
+                                                 02 - Crocomire (Miniboss)
+                                                 04 - Golden Torizo (Miniboss)
+
+4) Wrecked Ship       7ED82B??     7ED82B01      01 - Phantoon (Boss)
+
+5) Maridia            7ED82C??     7ED82C03      01 - Draygon (Boss)
+                                                 02 - Botwoon (Miniboss)
+
+6) Tourian            7ED82D??     7ED82D02      02 - Mother Brain (Boss)
+
+7) Space Colony       7ED82E??     7ED82E01      01 - Ridley
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   D. Events [4D]                                                          <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+7ED820?? (Max: 7ED820FC)
+01 - Zebes is Awake - The event after you collect the first missile pack.
+04 - Mother Brain's Container Destroyed
+08 - Zebetite Rightmost Visible
+10 - Zebetite 2nd from Rightmost Visible
+18 - Zebetite 2nd from Leftmost Visible
+20 - Zebetite Leftmost Visible
+38 - All Zebetites Destroyed
+     Only one Zebetite can exist at a time, either the rightmost or the one to
+     left of what was destroyed. A Zebetite is what's located only in Mother
+     Brain's room.
+40 - Phantoon Statue Stone Destroyed
+80 - Ridley Statue Stone Destroyed
+
+7ED821?? (Max: 7ED821FF)
+01 - Draygon Statue Stone Destroyed
+02 - Kraid Statue Stone Destroyed
+04 - Statues Sunken - Tourian accessible
+     The stones do not have to be destroyed for them all to be sunken.
+08 - Glass Tube Broken
+10 - Lower Norfair Chozo's Lava Lowered
+20 - Shaktool Cleared Path
+     Shaktool is located in Maridia, what goes through the sand horizontally.
+40 - Zebes Bomb Set
+80 - Dachola and the Etecoons Rescued
+     These are the trapped animals in the ending sequence.
+
+7ED822?? (Max: 7ED82228)
+01 - 1st Metroids Room
+02 - 2nd Metroids Room
+04 - 3rd Metroids Room
+08 - 4th Metroids Room
+     The rooms numbers are in sequence you normally take through Tourian.
+20 - Outran Speed Booster Lavaquake
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   E. Doors [4E]                                                           <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+                      ___________________________________
+                     /                                   \
+         ============           1. Opened [4E1]           ============
+                     \___________________________________/
+
+These codes are for doors that need to originally be opened by either missiles,
+a super missile, or a power bomb or are just flashing. The code will change
+them to blue.
+
+                        01  02  04  08  10  20  40  80
+1) 7ED8B0?? (Max: 23)    G   Y   -   -   -   P   -   -    Crateria
+2) 7ED8B1?? (Max: F0)    -   -   -   -   G   Y   Y   Y    Crateria
+3) 7ED8B2?? (Max: 09)    Y   -   -   Y   -   -   -   -    Crateria
+4) 7ED8B3?? (Max: EE)    -   M   M   M   -   P   P   P    Crate <- 5, Brin -> 1
+5) 7ED8B4?? (Max: 6F)    P   P   P   P   -   M   P   -    Brinstar
+6) 7ED8B5?? (Max: FF)    Y   G   P   P   M   M   G   M    Brinstar
+7) 7ED8B6?? (Max: 7F)    Y   M   P   G   G   G   M   -    Brinstar
+8) 7ED8B7?? (Max: FF)    G   Y   P   G   Y   G   M   G    Brinstar
+9) 7ED8B8?? (Max: FF)    M   M   M   M   G   E   M   M    Brinstar
+0) 7ED8B9?? (Max: FE)    -   G   P   G   Y   P   G   M    Norfair
+A) 7ED8BA?? (Max: FF)    M   P   P   G   G   P   P   P    Norfair
+B) 7ED8BB?? (Max: FF)    Y   M   M   M   E   M   Y   G    Norfair
+C) 7ED8BC?? (Max: 01)    M   -   -   -   -   -   -   -    Norfair
+D) 7ED8C0?? (Max: 7C)    -   -   M   M   G   E   M   -    Wrecked Ship
+E) 7ED8C1?? (Max: FF)    M   M   M   P   P   P   P   G    WS <- 4, Maridia -> 4
+F) 7ED8C2?? (Max: FF)    P   M   P   M   G   G   P   M    Maridia
+G) 7ED8C3?? (Max: FC)    P   -   G   E   M   M   M   M    Maridia
+H) 7ED8C4?? (Max: AF)    M   M   M   M   -   M   -   P    Tourian
+I) 7ED8C5?? (Max: 03)    E   P   -   -   -   -   -   -    Tourian
+
+KEY:
+P: Pink
+G: Green
+Y: Yellow
+M: Metal/Grey
+E: Eye
+
+Since rooms do not have names, Only a brief location name for each PAR code
+below has been provided. Approximate room colors in the location description in
+parenthesis has been included to provide additional help. Being familiar with
+the game helps very much to know the location.
+
+Crateria (14) - 3P, 2G, 6Y, 3M
+7ED8B001 (G) - Right of Samus's Ship
+7ED8B002 (Y) - Topright of Samus's Ship
+7ED8B020 (P) - Crateria Map Station Entrance
+7ED8B110 (G) - Wrecked Ship Entrance
+7ED8B120 (Y) - Missile on Pedal Entrance
+7ED8B140 (Y) - Center Brinstar Elevator Entrance
+7ED8B180 (Y) - Maridia Elevator Entrance
+7ED8B201 (Y) - Center Brinstar Elevator Exit
+7ED8B208 (Y) - Above Old Tourian (in the long vertical room)
+7ED8B302 (M) - Old Tourian Right Exit
+7ED8B304 (M) - Old Tourian Left Exit
+7ED8B308 (M) - Bomb/Silver Torizo Exit
+7ED8B320 (P) - Bomb/Silver Torizo Entrance
+7ED8B340 (P) - Outside of Statues/Tourian Elevator Entrance
+
+Brinstar (38) - 10P, 10G, 4Y, 13M, 1E
+7ED8B380 (P) - Left Elevator Room with Save Station Entrance (green)
+7ED8B401 (P) - Outside of Map Station Entrance (Left Elevator Room Topleft)
+               (green)
+7ED8B402 (P) - Left Elevator Room Topright Entrance (green)
+7ED8B404 (P) - Left Elevator Room Bottomright Entrance (green)
+7ED8B408 (P) - Outside of Missile Refill Entrance (Left Elevator Bottomleft)
+               (green)
+7ED8B420 (M) - Outside of Map Station Exit (pink)
+7ED8B440 (P) - Reserve Tank Entrance (green)
+7ED8B501 (Y) - Outside of Energy Tank with Blue Gate Entrance (green)
+7ED8B502 (G) - Pink area to Green area Entrance
+7ED8B504 (P) - Outside of Spore Spawn Entrance (pink)
+7ED8B508 (P) - After Charge Beam Entrance (pink)
+7ED8B510 (M) - Outside of Spore Spawn Exit (pink)
+7ED8B520 (M) - Outside of Spore Spawn Entrance (pink)
+7ED8B540 (G) - Spore Spawn Back Exit (pink)
+7ED8B580 (M) - Hidden No Door Secret Exit (pink)
+7ED8B601 (Y) - Green Area to Blue area Entrance
+7ED8B602 (M) - Green Area to Blue area Exit
+7ED8B604 (P) - After Middle Elevator Right Entrance (blue)
+7ED8B608 (G) - Green Area to Red Area Entrance
+7ED8B610 (G) - Super Missile (green)
+7ED8B620 (G) - Spore Spawn Forward Exit (after super missiles) (pink)
+7ED8B640 (M) - Outside of Energy Tank with Blue Gate Exit (pink)
+7ED8B701 (G) - Energy Refill Entrance (red)
+7ED8B702 (Y) - Outside of X-Ray Scope Entrance (red)
+7ED8B704 (P) - X-Ray Scope Entrance (red)
+7ED8B708 (G) - Top Elevator Room Top Entrance (red)
+7ED8B710 (Y) - Top Elevator Room Middle Entrance (red)
+7ED8B720 (G) - Top Elevator Room Bottom Entrance (red)
+7ED8B740 (M) - Top Elevator Room Top Exit (red)
+7ED8B780 (G) - Spazer Entrance (red)
+7ED8B801 (M) - Unlocked after defeating Kraid Entrance
+7ED8B802 (M) - Unlocked after defeating Kraid Exit
+7ED8B804 (M) - Mini Kraid Right Exit
+7ED8B808 (M) - Mini Kraid Left Exit
+7ED8B810 (G) - Energy and Missile Refill Entrance
+7ED8B820 (E) - Eye Door to Kraid
+7ED8B840 (M) - Varia Suit Entrance/Kraid Right Exit
+7ED8B880 (M) - Kraid Left Exit
+
+Norfair (24) - 7P, 6G, 3Y, 7M, 1E
+7ED8B902 (G) - Before Bubble Room Entrance (red)
+7ED8B904 (P) - Inside Topright Entrance from Top Elevator Entrance (red)
+7ED8B908 (G) - Outside of Ice Beam Entrance (pink)
+7ED8B910 (Y) - Map Station Entrance (pink)
+7ED8B920 (P) - Outside of Hi-Jump Boots Entrance (pink)
+7ED8B940 (G) - Crocomire Entrance (red)
+7ED8B980 (M) - Crocomire Exit (pink)
+7ED8BA01 (M) - Outside of Hi-Jump Boots Exit (pink)
+7ED8BA02 (P) - Power Bombs Before Crocomire Left Entrance (red)
+7ED8BA04 (P) - Huge Pit After Crocomire Right Exit (pink)
+7ED8BA08 (G) - Top left Bubble Room Entrance (green)
+7ED8BA10 (G) - Outside of Speed Booster Entrance (green)
+7ED8BA20 (P) - Speed Booster Entrance (red)
+7ED8BA40 (P) - Outside of Wave Beam Entrance (red)
+7ED8BA80 (P) - Wave Beam Entrance (red)
+7ED8BB01 (Y) - Outside of Lower Norfair Elevator Entrance (red)
+7ED8BB02 (M) - Gold Torizo Exit/Screw Attack Entrance (lower Norfair)
+7ED8BB04 (M) - Ridley Right Exit (lower Norfair)
+7ED8BB08 (M) - Ridley Left Exit (lower Norfair)
+7ED8BB10 (E) - Eye Door to Ridley (lower Norfair)
+7ED8BB20 (M) - Room with Secret Mini Room Shaped as Heart Exit 
+7ED8BB40 (Y) - Before Silver Space Pirates Room Entrance (lower Norfair)
+7ED8BB80 (G) - Sliver Space Pirates Room Entrance (lower Norfair)
+7ED8BC01 (M) - Sliver Space Pirates Room Exit - Before Ridley (lower Norfair)
+
+Wrecked Ship (9) - 1P, 1G, 0Y, 6M, 1E
+7ED8C004 (M) - Left Super Missile Entrance
+7ED8C008 (M) - Below Save Station Entrance
+7ED8C010 (G) - Outside of Phantoon Entrance
+7ED8C020 (E) - Eye Door to Phantoon
+7ED8C040 (M) - Phantoon Exit
+7ED8C101 (M) - Top Room Left Entrance
+7ED8C102 (M) - Top Room Right Entrance
+7ED8C104 (M) - Top Room Bottom Entrance
+7ED8C108 (P) - Energy Tank Entrance
+
+Maridia (19) - 7P, 4G, 0Y, 7M, 1E
+7ED8C110 (P) - Save Station Below Maridian Glass Tube (green)
+7ED8C120 (P) - Above Maridian Glass Tube Right Entrance/Green Gate
+               Entrance (green)
+7ED8C140 (P) - Room with Tatori Entrance (green)
+7ED8C180 (G) - Small Pipes Room Entrance (green)
+7ED8C201 (P) - Map Station Entrance (pink)
+7ED8C202 (M) - Plasma Exit (brown)
+7ED8C204 (P) - Save Station Near Top Elevator Entrance (brown)
+7ED8C208 (M) - Outside of Plasma Entrance (brown)
+7ED8C210 (G) - Top of Vertical Pipe Entrance (brown)
+7ED8C220 (G) - Bottom of Vertical Pipe Entrance (pink)
+7ED8C240 (P) - Small Pipes Room Save Station Entrance (pink)
+7ED8C280 (M) - Door Unlock after Defeating Draygon Left Entrance/Room with
+               Spikes and Waterfalls Left Entrance (brown)
+7ED8C301 (P) - Save Station Near Draygon Entrance (pink)
+7ED8C304 (G) - Outside of Draygon Entrance
+7ED8C308 (E) - Eye Door to Draygon (pink)
+7ED8C310 (M) - Door Unlock after Defeating Draygon Right Entrance/Room with
+               Spikes and Waterfalls Right Entrance (pink)
+7ED8C320 (M) - Botwoon Left Exit (pink)
+7ED8C340 (M) - Draygon Right Exit
+7ED8C380 (M) - Draygon Left Exit/Space Jump Entrance
+
+Tourian (8) - 2P, 0G, 0Y, 5M, 1E
+7ED8C401 (M) - Metroid 1st Room Exit
+7ED8C402 (M) - Metroid 2nd Room Exit
+7ED8C404 (M) - Metroid 3rd Room Exit
+7ED8C408 (M) - Metroid 4th Room Exit
+7ED8C420 (M) - Dust Torizo Left Entrance
+7ED8C480 (P) - After Big Metroid Entrance
+7ED8C501 (E) - Eye Door to Mother Brain
+7ED8C502 (P) - Mother Brain Entrance
+
+
+                      ___________________________________
+                     /                                   \
+         ============      2. Missile Hit Count [4E2]     ============
+                     \___________________________________/
+
+              C    B    N    W    M    T
+1) 7EDF42??   -    X    -    -    -    -     These only apply to pink doors
+2) 7EDF44??   -    X    -    -    -    -     and eye doors.
+3) 7EDF46??   X    X    -    -    -    -
+4) 7EDF48??   -    X    -    -    -    -     Resets after entering the room.
+5) 7EDF4A??   -    X    -    -    -    -     Pink doors take 5 shots while eye
+6) 7EDF4C??   -    X    -    -    -    -     doors take 3.
+7) 7EDF4E??   -    X    -    -    -    -
+8) 7EDF52??   X    X    -    X    X    -     Set value to 05, (for example,
+9) 7EDF54??   -    X   2X    -    X    -     7EDF5205), which will require
+0) 7EDF56??   -    -   2X    -   2X    -     only one missile to open the door
+A) 7EDF58??   -    X    -    X   2X    X
+B) 7EDF5A??   X    X   3X    -   2X    X
+
+Approximate room colors has been included in the location description to
+provide additional help.
+
+7EDF42??
+ B - After Charge Beam Entrance (pink)
+7EDF44??
+ B - Outside of Spore Spawn Entrance (pink)
+7EDF46??
+ C - Map Station
+ B - Outside of Missile Refill Entrance (Left Elevator Bottomleft) (green)
+7EDF48??
+ B - Left Elevator Room Bottomright Entrance (green)
+7EDF4A??
+ B - Left Elevator Room Topright Entrance (green)
+7EDF4C??
+ B - Outside of Map Station Entrance (Left Elevator Room Topleft) (green)
+7EDF4E??
+ B - Left Elevator Room with Save Station Entrance (green)
+7EDF52??
+ C - Outside of Statues/Tourian Elevator Entrance
+ B - Eye Door
+ W - Eye Door
+ M - Save Station Below Maridian Glass Tube (green)
+7EDF54??
+ B - Reserve Tank Entrance (green)
+ N - Outside of Wave Beam Entrance (red)
+     Wave Beam Entrance (red)
+     Outside of Hi-Jump Boots Entrance (pink)
+ M - Eye Door
+7EDF56??
+ N - Eye Door
+     Speed Booster Entrance (red)
+ M - Room with Tatori Entrance (green)
+     Map Station (pink)
+7EDF58??
+ B - After Middle Elevator Right Entrance (blue)
+ W - Energy Tank Entrance
+ M - Above Maridian Glass Tube Right Entrance/Green Gate Entrance (green)
+     Save Station Near Top Elevator Entrance (brown)
+ T - Eye Door
+7EDF5A??
+ C - Bomb/Silver Torizo Entrance
+ B - X-Ray Scope Entrance (red)
+ N - Inside Topright Entrance from Top Elevator Entrance (red)
+     Power Bombs Before Crocomire Left Entrance (red)
+     Huge Pit After Crocomire Right Exit (pink)
+ M - Save Station Near Draygon Entrance (pink)
+     Small Pipes Room Save Station Entrance (pink)
+ T - Mother Brain Entrance
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   F. Map [4F]                                                             <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+                      ___________________________________
+                     /                                   \
+         ============           1. Mapped [4F1]           ============
+                     \___________________________________/
+
+These are for when you would grab the map from the map station. The rooms
+normally in blue will not be marked on the pause map until Samus leaves the
+area. Current map region is affected by subsection Current Region [4F5] #1.
+
+The amount you are able to scroll when viewing the map is not changed. You need
+to enter codes under subsection Pause Map Scrolling [4F3] to adjust.
+
+Range: 00 - Not Collected
+       01 - Collected
+
+-------------------------------------------------------------------------------
+                          PAR Code
+-------------------------------------------------------------------------------
+1) Crateria               7ED908??
+2) Brinstar               7ED909??
+3) Norfair                7ED90A??
+4) Wrecked Ship           7ED90B??
+5) Maridia                7ED90C??
+6) Tourian                7ED90D??     <- Mapped by default.
+7) Space Colony           7ED90E??
+  
+
+                      ___________________________________
+                     /                                   \
+         ============        2. Explored Map [4F2]        ============
+                     \___________________________________/
+
+Usually not all the codes are necessarily needed for an area's map. Each code
+affects a small portion of the displayed map. No further explanation on the
+effects of the values entered is provided in this document.
+
+Range: 0 - 65535 (00 00 - FF FF)
+
+-------------------------------------------------------------------------------
+                     PAR Code                  Max Code 
+-------------------------------------------------------------------------------
+1) Crateria          7ECD52?? to 7ECE51??      7ECD52FF to 7ECE51FF
+2) Brinstar          7ECE52?? to 7ECF51??      7ECE52FF to 7ECF51FF
+3) Norfair           7ECF52?? to 7ED051??      7ECF52FF to 7ED051FF
+4) Wrecked Ship      7ED052?? to 7ED151??      7ED052FF to 7ED151FF
+5) Maridia           7ED152?? to 7ED251??      7ED152FF to 7ED251FF
+6) Tourian           7ED252?? to 7ED351??      7ED252FF to 7ED351FF
+7) Space Colony      7ED352?? to 7ED451??      7ED352FF to 7ED451FF
+
+
+                      ___________________________________
+                     /                                   \
+         ============    3. Pause Map Scrolling [4F3]     ============
+                     \___________________________________/
+
+The number refers to the pixel position on the map.
+
+Range: 0 - 32767 (00 00 - FF 7F)
+
+-------------------------------------------------------------------------------
+                           PAR Code               Max Code
+-------------------------------------------------------------------------------
+1) Minimum X (Width)       7E05AC?? & 7E05AD??    7E05ACFF & 7E05AD7F
+2) Maximum X (Width)       7E05AE?? & 7E05AF??    7E05AEFF & 7E05AF7F
+Setting it a high enough number will allow you to loop through the map.
+
+3) Minimum Y (Height)      7E05B0?? & 7E05B1??    7E05B0FF & 7E05B17F
+4) Maximum Y (Height)      7E05B2?? & 7E05B3??    7E05B2FF & 7E05B47F
+Setting it a high enough number will allow you to loop through the map.
+
+
+Normal width and height values for regions are below.
+
+                  Min X     Max X     Min Y     Max Y
+Crateria          30 00     C0 01     08 00     A8 00
+Brinstar          28 00     C8 01     20 00     B0 00
+Norfair           10 00     30 01     20 00     90 00
+Wrecked Ship      50 00     A8 00     70 00     A0 00
+Maridia           30 00     50 01     20 00     A0 00
+Tourian           58 00     A8 00     60 00     98 00
+
+
+                      ___________________________________
+                     /                                   \
+         ============          4. Minimap [4F4]           ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                                    PAR Code       Range
+-------------------------------------------------------------------------------
+1) Current Region's Map Mapped      7E0789??       00 - Not Mapped
+                                                   01 - Mapped
+
+2) Minimap View                     7E05F7??       00 - Hidden
+                                                   01 - Display
+
+
+                      ___________________________________
+                     /                                   \
+         ============          5. Regions [4F5]           ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                                                PAR Code   Range
+-------------------------------------------------------------------------------
+1) Current Region                               7E079F??     00 - Crateria
+This only works when you load a file. This will override     01 - Brinstar
+the Save Region PAR code.                                    02 - Norfair
+                                                             03 - Wrecked Ship
+2) Saved Region                                 7ED918??     04 - Maridia
+This works for both saving and loading. This is overtaken    05 - Tourian
+by the Current Region PAR code and overrides the Region      06 - Space Colony
+Selected on Map PAR code when loading.
+
+3) Region Selected on Map                       7E0950??     00 - Crateria
+Either 81A8AF80 or subsection Debug [4L] PAR codes must be   01 - Wrecked Ship
+entered for this code to work. This is overtaken by the      02 - Tourian
+Saved Region PAR code.                                       03 - Brinstar
+                                                             04 - Maridia
+                                                             05 - Norfair
+
+4) Select Region When Loading a File            81A81A00
+                                                81A8AF80
+Only the right, down, select buttons allow you to scroll through the selectable
+regions. Samus must already be in Zebes for this code to have use.
+
+
+                      ___________________________________
+                     /                                   \
+         ============           6. Saves [4F6]            ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                                        PAR Code     Range
+-------------------------------------------------------------------------------
+1) Skip Intro and Start on Zebes        82EEBB00
+This plays in affect when you select a file that's still on the Space Colony.
+
+2) Save Slot Selected                   7E0952??     00 - 02
+This determines which file save is currently in play. Affects which file the
+save station saves to. Saving with setting a value outside of the range risks
+any or all files to be deleted! This code is also used on the save slot screen
+for selecting which save slot, to copy a file, to erase a file, or to exit
+(00 - 05).
+
+3) Save Point                           7E078B??
+This only works when you load a file. Depending on what region you last saved
+in (or if you used a cheat to go to a different region), you need to refer
+to that region's list below for the value. First, second, third, and so on
+refers to save rooms.
+
+Crateria
+00 - Samus's Ship
+01 - First
+08 - At to Maridia Elevator
+09 - At to Brinstar Elevator (Right)
+0A - At to Brinstar Elevator (Middle)
+0B - At to Brinstar Elevator (Left)
+0C - At to Tourian Elevator
+10 - Samus's Ship
+11 - Right Outside from Wrecked Ship
+12 - Abovemost of Samus's Ship
+
+Brinstar
+00 - First
+01 - Second
+02 - Third
+03 - Fourth
+04 - Fifth
+08 - At to Crateria Elevator (Left)
+09 - At to Crateria Elevator (Middle)
+0A - At to Crateria Elevator (Right)
+0B - At to Norfair Elevator
+10 - At to Crateria Elevator (Left)
+11 - At Before Kraid
+12 - At Before Spore Spawn
+
+Norfair
+00 - First
+01 - Second
+02 - Third
+03 - Fourth
+04 - Fifth 
+05 - Sixth
+08 - At to Brinstar Elevator
+09 - At To Lower Norfair Elevator
+0A - At To Upper Norfair Elevator
+10 - At to Brinstar Elevator
+11 - At Before Crocomire
+12 - At Before Ridley
+13 - At Before Grappling
+14 - Near To Upper Norfair Elevator
+15 - Before Gold Torizo (Room may be glitchy)
+16 - In Gold Torizo Room
+
+Wrecked Ship
+00 - Save Location
+10 - At From Crateria Entrance (Left)
+11 - Before Phantoon (Room may be glitchy)
+
+Maridia
+00 - First
+01 - Second
+02 - Third
+03 - Fourth
+08 - At to Crateria Elevator
+10 - Top Left of Area
+11 - Before Draygon
+12 - Before Botwoon
+13 - In Vertical Pipe Bottom Room
+14 - Space Colony Elevator - Even though the save is when Samus is in Maridia
+     this brings to the Space Colony.
+
+Tourian
+00 - First
+01 - Second
+08 - At to Crateria Elevator
+10 - Before Mother Brain
+11 - Before Big Metroid
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   G. Time [4G]                                                            <+
+ /|                                                                         |\
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+  '-------------------------------------------------------------------------'
+
+                      ___________________________________
+                     /                                   \
+         ============        1. Time Played [4G1]         ============
+
+                     \___________________________________/
+
+Range: 0 - 65535 (00 00 - FF FF)
+
+-------------------------------------------------------------------------------
+                  PAR Code             Max Code             Max Norm
+-------------------------------------------------------------------------------
+1) Jiffies/Frames 7E09DA?? & 7E09DB??  7E09DAFF & 7E09DBFF  7E09DA3B & 7E09DB00
+2) Seconds        7E09DC?? & 7E09DD??  7E09DCFF & 7E09DDFF  7E09DC3B & 7E09DD00
+3) Minutes        7E09DE?? & 7E09DF??  7E09DEFF & 7E09DFFF  7E09DE3B & 7E09DF00
+4) Hours          7E09E0?? & 7E09E1??  7E09E0FF & 7E09E1FF  7E09E063 & 7E09E100
+
+
+                      ___________________________________
+                     /                                   \
+         ============         2. Countdown [4G2]          ============
+                     \___________________________________/
+
+Range: 0 - 255 (00 - FF)
+
+-------------------------------------------------------------------------------
+                             PAR Code     Max Code     Max Norm
+-------------------------------------------------------------------------------
+1) Jiffies/Centiseconds      7E0945??     7E0945FF     7E094599
+2) Seconds                   7E0946??     7E0946FF     7E094699
+3) Minutes                   7E0947??     7E0947FF     7E094799
+
+4) X Position                7E0949??     7E0949FF
+5) Y Position                7E094B??     7E094BFF
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   H. Game Start [4H]                                                      <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+-------------------------------------------------------------------------------
+                                            PAR Code
+-------------------------------------------------------------------------------
+1) Bypass Country and NTSC/PAL Check        808000FF
+
+2) Piracy Warning                           8086C201
+This will display the anti-piracy message when the game starts up. You cannot
+proceed to the game. Note that this code WILL delete all save files once you
+see the warning message!
+
+3) Game Pack Not Supported                  808602FF
+This will display a message saying the game pack is not designed for the
+system when the game starts up. This code does not touch the save files.
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   I. Before Gameplay [4I]                                                 <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+                      ___________________________________
+                     /                                   \
+         ============            1. Demo [4I1]            ============
+                     \___________________________________/
+
+A set of scenes contains seven individual scenes. A set begins playing once the
+title screen switches to playing the demos.
+
+-------------------------------------------------------------------------------
+                                                PAR Code      Range
+-------------------------------------------------------------------------------
+1) Current Set of Scenes to Play                7E1F55??      00 - 03
+
+2) Current Scene Playing                        7E1F57??      00 - 07
+
+3) Timer of Playing Scene                       7E1F53??      0 - 65535
+This also includes when on the title screen.    7E1F54??      (00 00 - FF FF)
+
+4) Last Set of Scenes to Play                   7E1F59??      00 - 03
+
+5) Control                                      7E0A89??      00 - Have
+                                                              80 - Do not have
+The playing demo still can be escaped if a button is pressed during the scene.
+To get full control without escaping the demo you can enter 7E099808, enable,
+and then immediately disable the code. If you do not disable then you may get
+stuck trying to go through a door. You cannot escape from the demo if you take
+control of it. Saving will overwrite Samus A. You can also control Samus during
+the two intro scenes.
+
+
+                      ___________________________________
+                     /                                   \
+         ============        2. Control Icons [4I2]       ============
+                     \___________________________________/
+
+When in the game, the codes for #1 to #5 are reused. Refer to subsection
+Current Room (4C1) #4 in for the reused codes. The range applies to each
+individual PAR code.
+
+-------------------------------------------------------------------------------
+                 PAR Code        Range
+-------------------------------------------------------------------------------
+1) Shot          7E1B3D??  \     00 - X
+2) Jump          7E1B3F??   \    01 - A
+3) Dash          7E1B41??    \   02 - B
+4) Item Select   7E1B43??     >  03 - Select
+5) Item Cancel   7E1B45??    /   04 - Y
+6) Angle Up      7E1B47??   /    05 - L <- Only L & R buttons are allowed to be
+7) Angle Down    7E1B49??  /     06 - R <- assigned. Any other button assigned
+                                           is assumed as "OFF" assigned.
+
+
+                      ___________________________________
+                     /                                   \
+         ============       3. Game Controls [4I3]        ============
+                     \___________________________________/
+
+These are actions and the code is the button you have to press for the action.
+The range applies to each individual PAR code.
+
+-------------------------------------------------------------------------------
+                    PAR Code                     Range
+-------------------------------------------------------------------------------
+1) Up               7E09AA?? & 7E09AB??  \       01 00 - Right
+2) Down             7E09AC?? & 7E09AD??   \      02 00 - Left
+3) Left             7E09AE?? & 7E09AF??    \     04 00 - Down
+4) Right            7E09B0?? & 7E09B1??     \    08 00 - Up
+5) Shoot            7E09B2?? & 7E09B3??      \   10 00 - Start
+6) Jump             7E09B4?? & 7E09B5??       >  20 00 - Select
+7) Run              7E09B6?? & 7E09B7??      /   40 00 - Y
+8) Item Cancel      7E09B8?? & 7E09B9??     /    80 00 - B
+9) Switch Item      7E09BA?? & 7E09BB??    /     00 10 - R
+0) Aim Up           7E09BC?? & 7E09BD??   /      00 20 - L
+A) Aim Down         7E09BE?? & 7E09BF??  /       00 40 - X
+                                                 00 80 - A
+
+
+                      ___________________________________
+                     /                                   \
+         ============            4. Menu [4I4]            ============
+                     \___________________________________/
+
+-------------------------------------------------------------------------------
+                         PAR Code          Range
+-------------------------------------------------------------------------------
+1) Moonwalk              7E09E4??          00 - Off
+                                           01 - On
+
+2) Item Cancel           7E09EA??          00 - Manual
+                                           01 - Auto
+
+3) Text Language         7E09E2??          00 - English  / German
+                                           01 - Japanese / French
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   J. Screen [4J]                                                          <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+-------------------------------------------------------------------------------
+                       PAR Code              Range
+-------------------------------------------------------------------------------
+1) X Position          7E0911?? & 7E0912??    0 - 65535 (00 00 - FF FF)
+2) Y Position          7E0915?? & 7E0916??    0 - 65535 (00 00 - FF FF)
+3) Message Box Type    7E1C1F??               01 - "Energy Tank"
+                                              02 - "Missile"
+The message to display when the message       03 - "Super Missile"
+box appears. Save questions only saves        04 - "Power Bomb"
+when you are at a save point.                 05 - "Grappling Beam"
+                                              06 - "X-Ray Scope"
+                                              07 - "Varia Suit"
+                                              08 - "Spring Ball"
+                                              09 - "Morphing Ball"
+                                              0A - "Screw Attack"
+                                              0B - "Hi-Jump Boots"
+                                              0C - "Space Jump"
+                                              0D - "Speed Booster"
+                                              0E - "Charge Beam"
+                                              0F - "Ice Beam"
+                                              10 - "Wave Beam"
+                                              11 - "Spazer Beam"
+                                              12 - "Plasma Beam"
+                                              13 - "Bomb"
+                                              14 - "Map data access completed."
+                                              15 - "Energy recharge completed."
+                                              16 - "Missile reload completed."
+                                              17 - "Would you like to save?"
+                                              18 - "Save completed."
+                                              19 - "Reserve Tank"
+                                              1A - "Gravity Suit"
+                                              1B - Glitchy Text (May do game)
+                                              1C - "Would you like to save?"
+                                              1D - Glitchy Text (May do game)
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   K. Audio [4K]                                                           <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+-------------------------------------------------------------------------------
+                            PAR Code   Range
+-------------------------------------------------------------------------------
+1) Sounds                   7E05F501   00 - Enabled
+                                       01 - Disabled
+
+2) Track                    7E07C9??   00 - No Change
+                                       01 - Samus Appearance
+                                       02 - Acquire Item
+                                       03 - Elevator / Item Room
+                                       04 - Hall Before Statues
+                                       05 - Song 1 / No Change
+                                       06 - Song 2
+                                       07 - [Rarely Used]
+                                       80 - Mute
+A quick reference is: 0 - Off, 1-4 - Fixed, 5-7 - Song/Instrument Dependant
+
+3) Music Song/Instrument    7E07CB??   00 - None/No Change
+                                       03 - Title Screen
+                                       06 - Empty Crateria
+                                       09 - Space Pirate
+                                       0C - Samus Theme
+                                       0F - Green Brinstar
+                                       12 - Red Brinstar
+                                       15 - Upper Norfair
+                                       18 - Lower Norfair
+                                       1B - Maridia
+                                       1E - Tourian
+                                       21 - Mother Brain
+                                       24 - Boss Fight (04, 05, 06, 80)
+                                       27 - Boss Fight 2 (04, 05, 06)
+                                       2A - Miniboss Fight
+                                       2D - Space Colony
+                                       30 - Wrecked Ship
+                                       33 - Zebes Boom
+                                       36 - Intro
+                                       39 - Death
+                                       3C - Credits
+                                       3F - "The last metroid is in capativity"
+                                       42 - "The galaxy is at peace"
+                                       45 - Large Metroid
+                                       48 - Samus Theme
+#2 and #3 are both used to play the music that's heard. Often 05 XX and 06 XX
+are used for music played in the region. 07 24 is specially used for the escape
+sequence song. You will just have to experiment with combining the two PAR
+codes.
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   L. Debug [4L]                                                           <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+This section provides the debug mode and codes that are part of the debug mode
+in the game.
+
+
+1) Debug Mode: Game Load Method - 808004FF | Instant Method - 7E05D1FF
+
+INTRO: Just as the name indicates, this PAR code allows you to access the many
+features the developers used while debugging the game. While on debug mode,
+Controller 2 is now operable for input of special debug commands. There are
+also a few special debug commands for Controller 1.
+
+NOTE: There are two ways you can enter this code.
+-The game load method requires you to reset the game after entering the code.
+-The instant method allows you to use the code anywhere, anytime and debug mode
+will be activate instantly.
+
+WARNING: It is possible for the game to freeze when least expected when using
+the features that come with this code. It is also possible for save files to
+magically disappear (though, for some reason) when using the features that come
+with this code.
+
+EXPLANATION: After choosing a save file you are able to choose which region you
+want to go on by either using the directional pad or by pressing select on
+Controller 1. Even if the file is still normally on Space Colony you will still
+be able to choose which region you want to go one, which unfortunately does not
+include Space Colony. After selecting the area and while viewing the region's
+map you can choose your load location by pressing Select on Controller 2. There
+are some special locations predefined just for the debug code. Additionally,
+save point locations and elevator locations can be selected but need to be
+activated first in the save file. Codes to activate are in #0. All these points
+are indicated by a glowing "O" (zero) if on already explored map.
+
+All the inputs except the CPU usage meter can only be entered during gameplay.
+This means that they cannot be entered in the pause menu. The in-game reset
+(by pressing and holding L + R + Start + Select) is also enabled. These are the
+inputs that can be entered during gameplay:
+
+----------------
+Controller 1   <
+----------------
+a) Select + L + A - Palette viewer. There are two sets of palettes, so you will
+need to press the combination once more to go to the second set. To exit you
+have to press the combination a final time. This may glitch sprite graphics
+upon exiting. Pausing and unpausing the game usually cleans up some of the
+screen.
+
+b) Select + L + Y - CPU usage meter. A grey bar appears for how much CPU power
+is available. In other words, CPU used is what is not part of the grey bar. So,
+if there is no grey bar visible then maximum CPU is being used.
+
+c) Select + L + X - Sprite viewer. There are two sets of sprite. For the first
+set of sprites you can use the Select + L + A combination to flip through the
+different palette colors. Flipping through the sets and exiting is just like
+the palette viewer.
+
+d) Select + R + A - Turns on/off Layer 3 (status bar, liquids/fogs, etc.).
+Interesting to know is that typically this layer turns off when the game
+freezes.
+
+e) Select + R + B - Swaps between 0 and your current missiles, super missiles,
+and power bombs. Refer to #2, #3, and #4 for PAR codes to modify the amount
+stored. The numbers are only saved when switching to 0.
+
+----------------
+Controller 2   <
+----------------
+a) A - Sets if Samus is invulnerabile. The PAR code for this is also under
+Samus [4B] letter E.
+
+b) L - Stops all enemies. You cannot hurt them and they cannot hurt you.
+
+c) R - Displays the enemy controller. The initial list of attributes you see
+are:
+   - enemy's name ([enemy's name];)
+   - x position (TK_PosX:)
+   - y position (TK_PosY:)
+   - HP (TK_HP:)
+   - pointer (Pointer:) - This is the enemy number in the list, where 0000 is
+     the first enemy, 0040 is the second, 0080 is the third, 00C0 is the
+     fourth, and so on up to 07C0 for the 32th enemy in increments of 40.
+     Existing enemies can be modified or new ones can be created.
+   - location ([Area][Section #]_[Room #]) - Planet abbreviations are:
+       SF = Surface Area (Crateria)
+       BL = Brinstar
+       NO = Norfair
+       NP = Wrecked Ship
+       ML = Maridia
+       TS = Tourian
+       CL = Ceres
+If the selected enemy is on screen then "<==: Move" text will be displayed to
+the right center of the enemy.
+On the initial list there are further more buttons that control the menu with
+the Controller 2.
+    1) A - Moves the selected enemy to the right side of Samus
+    2) Directional Pad - Moves the selected enemy around.
+    3) Hold X + Direction Pad - Moves the selected enemy around quicker.
+    4) Select - Selects the next enemy in the list.
+    5) Hold B + Press Select - Selects the previous enemy in the list. If
+       Pointer is 0000 and you use this then it will go back to FFC0. You can
+       continue to go back but note that none of these are for enemies. By
+       modifying these you are actually modifying something else in the game,
+       which means there's a good chance of the game freezing and possibly
+       save files being deleted. Also, if Pointer is 0040 then it will go back
+       to 07C0 instead of 0000.
+
+Pressing R on Controller 2 again will bring up another list, which is the
+attributes for the enemy selected, which you can edit. The attributes are the
+enemy's:
+   - x position (PosX:)
+   - y position (PosY:)
+   - Orientation (Pose:) - Used to determine in what position the enemy is
+                           (such as on the walls/ceilings). No more information
+                           is provided within this document, so use it at your
+                           own risk.
+   - Properties (Swt1:) - Special attributes assigned to the enemy. The numbers
+                          just need to be added (in hexadecimal value), with
+                          including the default value, for what you want. The
+                          max value is FF00. The values are:
+                           2000 - Default
+                          +100 - Invisible (can hurt Samus)
+                          +200 - Deleted (cannot hurt Samus)
+                          +400 - Non-responsive (ignore Samus/projectiles)
+                          +800 - Move off screen (process even when offscreen)
+                          +1000 - Stop plasma (blocks plasma shots)
+                          +4000 - Respawn
+                          +8000 - Platform (makes hitbox solid to Samus)
+   - Graphic Unknown (Swt2:) - This may have something to do with graphics.
+                               This is used for bosses and possibly other
+                               enemies. No more information is provided within
+                               this document, so use it at your own risk.
+   - Speed (Opt0:)  - The exact effect varies on the type of enemy. It may be
+   - Speed 2(Opt1:) - for which direction the enemy is moving, distance it
+                      covers, number of hits it takes to kill/destroy, movement
+                      delay, or even the actual constant movement speed. No
+                      more information is provided within this document, so use
+                      it at your own risk.
+The controls for Controller 2 for this second menu are:
+    1) Directional Pad - Moves the circle within the list around.
+    2) A - Resets the changed coordinates back to the original numbers.
+    3) B - Decrease the circled number/letter by one.
+    4) X - Increase the circled number/letter by one.
+    5) R - Saves changes and exits the list.
+    6) Select - Saves and applies changes and exits the list.
+    7) L - Saves and applies changes and goes to the enemy spawner list.
+       In the enemy spawner list you will see a list of enemies that are
+       available in the preset list of enemies (of the room). The controls for
+       Controller 2 for this menu are:
+         1) Down - Scrolls through the list with the currently selected enemy's
+            name shown above the list.
+         2) L - Save the selected enemy. The enemy shown when entering the
+            list will not be saved so you must scroll through the list of
+            enemies back to the first one appearing for it to save. Note that
+            enemies that are legitimately named "NoDebug" will most likely
+            freeze the game.
+         3) R - Cancel and exits the list
+
+d) Start - Brings up a debug save prompt. If you choose "End" then the game
+will save and reset. Everything like a normal save point is saved except when
+loading the save file you will be brought back to the last save point you saved
+at.
+e) Select - Lists the enemies (name and the palette counter value) in the room
+and some value of the room (I do not know what it is). It may not correctly
+display unless first accessing the list when pressing R on Controller 2.
+
+
+
+To use the codes below it is recommended or required to have debug mode
+enabled.
+-------------------------------------------------------------------------------
+                                PAR Code             Range
+-------------------------------------------------------------------------------
+2) Missile Swap                 7E05C9?? & 7E05CA??   0 - 65535 (00 00 - FF FF)
+3) Super Missile Swap           7E05CB?? & 7E05CC??   0 - 65535 (00 00 - FF FF)
+4) Power Bomb Swap              7E05CD?? & 7E05CE??   0 - 65535 (00 00 - FF FF)
+5) Swap Status                  7E05D0??              20 - Off
+                                                      A0 - On
+
+6) Toggle Scrolling             808006FF
+The screen scrolling can be stopped by pressing X on Controller 2. Note that if
+this code is frozen you will not be able to toggle scrolling back on. You would
+have to disable this code or set it to 80800600 to reenable scrolling.
+
+7) Display Scrolling Triggers   84B36660
+Displays the spots where scrolling code is to execute. This is displayed as an
+unopened container holding an item.
+
+8) Display Scrolling Trigger    84B33360
+    Extensions
+Displays the range of the trigger. This displays as part of a yellow door.
+
+9) Leave Zebes by Ship          A2AAF000
+Hold B on Controller 2 and enter the ship to make Samus's ship lift off and
+show the ending scene. Debug mode does not necessarily need to be enabled for
+this to work.
+
+0) Activated Elevators and Save Points
+Debug mode must be enabled in order for these codes to have any use. Activated
+elevators and save points are accumulative. First, second, third, and fifth
+refers to save points.
+
+               Used Elevator              Save Point
+-------------------------------------------------------------------------------
+Crateria       7ED8F8?? (Max: 7ED8F803)   7ED8F9?? (Max: 7ED8F91F)
+      01 -     Samus's Ship               At to Maridia Elevator
+      02 -     First                      At to Brinstar Elevator (Top)
+      04 -                                At to Brinstar Elevator (Mid)
+      08 -                                At to Brinstar Elevator (Left)
+      10 -                                At to Tourian Elevator
+     
+Brinstar       7ED8FA?? (Max: 7ED8FA1F)   7ED8FB?? (Max: 7ED8FB7F)
+      01 -     First                      At to Crateria Elevator (Left)
+      02 -     Second                     At to Crateria Elevator (Mid)
+      04 -     Third                      At to Crateria Elevator (Top)
+      08 -     Fourth                     At to Norfair Elevator
+      10 -     Fifth                      At to Crateria Elevator (Left)
+      20 -                                At Before Kraid
+      40 -                                At Before Spore Spawn
+
+Wrecked Ship   7ED8FC?? (Max: 7ED8FC01)   7ED8FD?? (Max: 7ED8FD03)
+      01 -     Save Location              At From Crateria Entrance (Left)
+      02 -                                Before Phantoon (Room may be glitchy)
+
+Maridia        7ED8FE?? (Max: 7ED8FE0F)   7ED8FF?? (Max: 7ED8FF3F)
+      01 -     First                      At to Crateria Elevator
+      02 -     Second                     Top Left of Area
+      04 -     Third                      Before Draygon
+      08 -     Fourth                     Before Botwoon
+      10 -                                In Vertical Pipe Bottom Room
+      20 -                                Space Colony Elevator
+
+Tourian        7ED900?? (Max: 7ED89003)   7ED901?? (Max: 7ED89107)
+      01 -     First                      At to Crateria Elevator
+      02 -     Second                     Before Mother Brain
+      04 -                                Before Big Metroid
+
+
+
+
+  .-------------------------------------------------------------------------.
+  |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+ \|                                                                         |/
++>   M. Miscellaneous [4M]                                                  <+
+ /|                                                                         |\
+  |\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
+  '-------------------------------------------------------------------------'
+
+-------------------------------------------------------------------------------
+                                   PAR Code              Range
+-------------------------------------------------------------------------------
+1) Random Number Generator (RNG)   7E05E5?? & 7E05E6??   0-65535(00 00 - FF FF)
+Both codes must be entered and must be frozen to have any use. The number
+changes very quickly. Using these codes is a good way to manipulate enemy
+drops and certain enemy actions.
+
+
+
+
+===============================================================================
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+     :::::::::::::::::::::::                       :::::::::::::::::::::::
+::::::::::::::::::::::::::   5.  C o p y r i g h t   ::::::::::::::::::::::::::
+     :::::::::::::::::::::::                       :::::::::::::::::::::::
+:::::::::::::::               :::::::::::::::::::::             :::::::::::::::
+===============================================================================
+
+This may be not be reproduced under any circumstances except for personal,
+private use. It may not be placed on any web site or otherwise distributed
+publicly without advance written permission. Use of this document on any other
+website or as a part of any public display is strictly prohibited, and a
+violation of copyright.
+
+
+Copyright 2006 David Morris
+
