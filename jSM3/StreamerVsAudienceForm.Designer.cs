@@ -2,7 +2,7 @@
 
 namespace jSM3
 {
-    partial class TrackerForm
+    partial class StreamerVsAudienceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,16 +33,14 @@ namespace jSM3
         {
             this.SuspendLayout();
             // 
-            // TrackerForm
+            // StreamerVsAudienceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 361);
-            this.DoubleBuffered = true;
-            this.Name = "TrackerForm";
-            this.Text = "Autotracker";
-            this.Load += new System.EventHandler(this.TrackerForm_Load);
-            this.Resize += new System.EventHandler(this.TrackerForm_Resize);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "StreamerVsAudienceForm";
+            this.Text = "Streamer vs Audience";
+            this.Load += new System.EventHandler(this.StreamerVsAudienceForm_Load);
             this.ResumeLayout(false);
         }
 

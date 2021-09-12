@@ -25,10 +25,7 @@ namespace SuperMetroidApi
             _memApi = memApi ?? throw new ArgumentNullException(nameof(memApi));
             _smCheats = new SmCheatsAdapter(cheats, memoryDomains ?? throw  new ArgumentException(nameof(memoryDomains)));
         }
-
-
-        // Cheats playground Cheats playground Cheats playground Cheats playground Cheats playground
-        // Cheats playground Cheats playground Cheats playground Cheats playground Cheats playground
+        
 
         #region ############### Selected Item ###############
 

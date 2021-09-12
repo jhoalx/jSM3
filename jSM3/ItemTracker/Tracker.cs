@@ -41,7 +41,7 @@ namespace jSM3.ItemTracker
         {
             _samus = samusApi ?? throw new ArgumentNullException(nameof(samusApi));
             _watchlistService = watchlistService;
-        }
+        } 
 
 
         public void DrawTo(GraphicsAdapter adaptedSurface)
@@ -52,7 +52,7 @@ namespace jSM3.ItemTracker
             CheckItemsStatuses();
 
             TrackerGraphicsEngine trackerGraphicsEngine = new(adaptedSurface, _smItems);
-            trackerGraphicsEngine.CalculateGrid(adaptedSurface.Width, adaptedSurface.Height);
+            trackerGraphicsEngine.CalculateGrid(adaptedSurface.Width, adaptedSurface.Height); 
 
 
             // foreach (Watch watch in _watchlistService.SmOwnedItemWatches)

@@ -29,99 +29,107 @@ namespace jSM3
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGrantVariaSuit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtEnergy = new System.Windows.Forms.TextBox();
-            this.lblReserveSupplyMode = new System.Windows.Forms.Label();
-            this.btnLaunchTracker = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnStreamerVsAudience = new System.Windows.Forms.Button();
+            this.btnAutotracker = new System.Windows.Forms.Button();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnGrantVariaSuit
+            // btnClose
             // 
-            this.btnGrantVariaSuit.Location = new System.Drawing.Point(12, 57);
-            this.btnGrantVariaSuit.Name = "btnGrantVariaSuit";
-            this.btnGrantVariaSuit.Size = new System.Drawing.Size(138, 50);
-            this.btnGrantVariaSuit.TabIndex = 0;
-            this.btnGrantVariaSuit.Text = "Grant Varia Suit";
-            this.btnGrantVariaSuit.UseVisualStyleBackColor = true;
-            this.btnGrantVariaSuit.Click += new System.EventHandler(this.btnGrant_Click);
+            this.btnClose.BackColor = System.Drawing.Color.Black;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(72)))));
+            this.btnClose.Location = new System.Drawing.Point(591, 22);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(26, 23);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "✖ ";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // button1
+            // btnMinimize
             // 
-            this.button1.Location = new System.Drawing.Point(40, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 20);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Grant Varia Suit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnTake_Click);
+            this.btnMinimize.BackColor = System.Drawing.Color.Black;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(72)))));
+            this.btnMinimize.Location = new System.Drawing.Point(564, 22);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(26, 23);
+            this.btnMinimize.TabIndex = 0;
+            this.btnMinimize.Text = "🗕";
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // button2
+            // panelMenu
             // 
-            this.button2.Location = new System.Drawing.Point(40, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 20);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Mensaje Chimbo";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.panelMenu.BackColor = System.Drawing.Color.Transparent;
+            this.panelMenu.Controls.Add(this.btnStreamerVsAudience);
+            this.panelMenu.Controls.Add(this.btnAutotracker);
+            this.panelMenu.Location = new System.Drawing.Point(16, 16);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(96, 448);
+            this.panelMenu.TabIndex = 6;
             // 
-            // txtEnergy
+            // btnStreamerVsAudience
             // 
-            this.txtEnergy.Location = new System.Drawing.Point(12, 9);
-            this.txtEnergy.Name = "txtEnergy";
-            this.txtEnergy.Size = new System.Drawing.Size(100, 20);
-            this.txtEnergy.TabIndex = 3;
+            this.btnStreamerVsAudience.BackColor = System.Drawing.Color.Black;
+            this.btnStreamerVsAudience.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStreamerVsAudience.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStreamerVsAudience.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(72)))));
+            this.btnStreamerVsAudience.Location = new System.Drawing.Point(0, 80);
+            this.btnStreamerVsAudience.Name = "btnStreamerVsAudience";
+            this.btnStreamerVsAudience.Size = new System.Drawing.Size(96, 80);
+            this.btnStreamerVsAudience.TabIndex = 2;
+            this.btnStreamerVsAudience.Text = "Streamer vs Audience";
+            this.btnStreamerVsAudience.UseVisualStyleBackColor = false;
+            this.btnStreamerVsAudience.Click += new System.EventHandler(this.btnStreamerVsAudience_Click);
             // 
-            // lblReserveSupplyMode
+            // btnAutotracker
             // 
-            this.lblReserveSupplyMode.Location = new System.Drawing.Point(118, 12);
-            this.lblReserveSupplyMode.Name = "lblReserveSupplyMode";
-            this.lblReserveSupplyMode.Size = new System.Drawing.Size(88, 22);
-            this.lblReserveSupplyMode.TabIndex = 4;
-            this.lblReserveSupplyMode.Text = "label1";
-            // 
-            // btnLaunchTracker
-            // 
-            this.btnLaunchTracker.Location = new System.Drawing.Point(12, 253);
-            this.btnLaunchTracker.Name = "btnLaunchTracker";
-            this.btnLaunchTracker.Size = new System.Drawing.Size(138, 20);
-            this.btnLaunchTracker.TabIndex = 5;
-            this.btnLaunchTracker.Text = "Tracker";
-            this.btnLaunchTracker.UseVisualStyleBackColor = true;
-            this.btnLaunchTracker.Click += new System.EventHandler(this.btnLaunchTracker_Click);
+            this.btnAutotracker.BackColor = System.Drawing.Color.Black;
+            this.btnAutotracker.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAutotracker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutotracker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(72)))));
+            this.btnAutotracker.Location = new System.Drawing.Point(0, 0);
+            this.btnAutotracker.Name = "btnAutotracker";
+            this.btnAutotracker.Size = new System.Drawing.Size(96, 80);
+            this.btnAutotracker.TabIndex = 1;
+            this.btnAutotracker.Text = "Tracker";
+            this.btnAutotracker.UseVisualStyleBackColor = false;
+            this.btnAutotracker.Click += new System.EventHandler(this.btnAutotracker_Click);
             // 
             // ToolMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(218, 285);
-            this.Controls.Add(this.btnLaunchTracker);
-            this.Controls.Add(this.lblReserveSupplyMode);
-            this.Controls.Add(this.txtEnergy);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnGrantVariaSuit);
+            this.BackgroundImage = global::jSM3.Properties.Resources.toolbg;
+            this.ClientSize = new System.Drawing.Size(640, 480);
+            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.btnMinimize);
+            this.Controls.Add(this.btnClose);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "ToolMainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ToolMainForm_FormClosing);
             this.Load += new System.EventHandler(this.ToolMainForm_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ToolMainForm_MouseDown);
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
         }
 
-        private System.Windows.Forms.Button btnLaunchTracker;
+        private System.Windows.Forms.Button btnClose;
 
-        private System.Windows.Forms.Label lblReserveSupplyMode;
+        private System.Windows.Forms.Button btnMinimize;
 
-        private System.Windows.Forms.TextBox txtEnergy;
+        private System.Windows.Forms.Panel panelMenu;
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAutotracker;
 
-        private System.Windows.Forms.Button button1;
-
-        private System.Windows.Forms.Button btnGrantVariaSuit;
-
+        private System.Windows.Forms.Button btnStreamerVsAudience;
+        
         #endregion
 
     }

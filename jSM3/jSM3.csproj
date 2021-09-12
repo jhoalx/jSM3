@@ -8,6 +8,7 @@
         <StartupObject />
         <UseWindowsForms>true</UseWindowsForms>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <OutputType>Library</OutputType>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,23 +35,30 @@
 
     <ItemGroup>
         <Compile Update="Properties\Resources.Designer.cs">
-            <DesignTime>True</DesignTime>
-            <AutoGen>True</AutoGen>
-            <DependentUpon>Resources.resx</DependentUpon>
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
         <Compile Update="TrackerForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Update="Panels\StreamerVsAudienceSettingsPanel.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Update="StreamerVsAudienceForm.cs">
           <SubType>Form</SubType>
         </Compile>
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Update="Properties\Resources.resx">
-            <Generator>ResXFileCodeGenerator</Generator>
-            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-        </EmbeddedResource>
+      <EmbeddedResource Update="Properties\Resources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <Copy SourceFiles="$(OutputPath)$(MSBuildProjectName).dll" DestinationFolder="../BizHawk/ExternalTools" />
+        <Copy SourceFiles="$(OutputPath)$(MSBuildProjectName).pdb" DestinationFolder="../BizHawk/ExternalTools" />
     </Target>
 </Project>

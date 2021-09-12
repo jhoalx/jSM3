@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 
+
 namespace jSM3.ItemTracker.Adapters
 {
     public class GraphicsAdapter
@@ -12,14 +13,14 @@ namespace jSM3.ItemTracker.Adapters
         public int Width { get; init; }
         public int Height { get; init; }
 
-        public GraphicsAdapter(Graphics g, int width, int height)
+        public GraphicsAdapter(Graphics g, Size formsize)
         {
             _g = g ?? throw new ArgumentNullException(nameof(g));
             _g.PixelOffsetMode = PixelOffsetMode.Half;
             _g.InterpolationMode = InterpolationMode.NearestNeighbor;
 
-            Width = width;
-            Height = height;
+            Width = formsize.Width;
+            Height = formsize.Height;
         }
 
         public void Clear(Color color)
@@ -49,11 +50,12 @@ namespace jSM3.ItemTracker.Adapters
 
         public void DrawItemEquippedCircle(Rectangle sourceRect)
         {
+
             Rectangle destinationRect = new Rectangle(
                 sourceRect.X,
                 sourceRect.Y,
-                (int)(sourceRect.Width / 3),
-                (int)(sourceRect.Height / 3)
+                (int)Math.Ceiling((double)(sourceRect.Width / 3)),
+                (int)Math.Ceiling((double)(sourceRect.Height / 3))
             );
             
             // Create a path that consists of a single ellipse.

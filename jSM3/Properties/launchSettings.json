@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "jSM3": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Jhoal\\Escritorio\\jSM3\\BizHawk\\EmuHawk.exe",
+      "workingDirectory": "D:\\Jhoal\\Escritorio\\jSM3\\BizHawk"
+    }
+  }
+}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Windows.Forms;
 using jSM3.Constants;
 using jSM3.ItemTracker.Adapters;
 using jSM3.ItemTracker.Models;
@@ -45,27 +46,27 @@ namespace jSM3.ItemTracker
         }
         
         
-        private const int ImageSize = 16;
-        private const int CellPadding = 1;
+        private const int ImageSize = 16; // images resolution: 16x16 pixels
+        private const int CellPadding = 3;
         private const int Columns = 8;
         private const int CellSize = ImageSize + CellPadding;
         public void CalculateGrid(int baseWidth, int baseHeight)
         {
-            int scale = 1;
             int adjustedColumns = (int)(Columns * (baseWidth / (float)baseHeight));
-
-            // if (adjustedColumns < 4) adjustedColumns = 4;
 
             int itemCount = _smItems.Count;
 
-            int normalItemsRows = (int)Math.Ceiling((float)(itemCount + 1) / adjustedColumns);
-            int cellsPerColumn = baseHeight / ((CellSize * (2 + normalItemsRows)) );
-            int cellsPerRow = baseWidth / ((CellSize * adjustedColumns) + (CellPadding * scale));
-
-            scale = cellsPerColumn <= cellsPerRow ? cellsPerColumn : cellsPerRow;
+            int itemsRows = (int)Math.Ceiling((float)(itemCount + 1) / adjustedColumns);
             
-            _itemSlots = new List<Rectangle>();
+            int cellsPerColumn = baseHeight / ((CellSize * (2 + itemsRows)));
+            int cellsPerRow = baseWidth / ((CellSize * adjustedColumns) + CellPadding);
 
+            int scale = cellsPerColumn <= cellsPerRow ? cellsPerColumn : cellsPerRow;
+            if (scale < 1) scale = 1;
+            
+
+            _itemSlots = new List<Rectangle>();
+ 
             int row = 0;
             int col = 0;
 
@@ -76,57 +77,69 @@ namespace jSM3.ItemTracker
                     row++;
                     col = 0;
                 }
+
                 _itemSlots.Add(
                     new Rectangle(
                         (CellPadding * scale) + (col * (ImageSize + CellPadding) * scale),
-                        row * (ImageSize + CellPadding) * scale,
+                        (CellPadding * scale) + (row * (ImageSize + CellPadding) * scale),
                         ImageSize * scale,
                         ImageSize * scale
                     )
                 );
+
                 col++;
             }
+
         }
 
         public void Render()
         {
-            ImageAttributes greyscaleAttributes = new();
-            greyscaleAttributes.SetColorMatrix(_greyscaleColorMatrix);
-            
-            _formGraphics.Clear(_defaultBackground);
-
-            int drawnItemsCounter = 0;
-            for (int i = 0; i < 16; i++)
+            try
             {
-                if (_smItems[i].Owned)
+                ImageAttributes greyscaleAttributes = new();
+                greyscaleAttributes.SetColorMatrix(_greyscaleColorMatrix);
+
+                _formGraphics.Clear(_defaultBackground);
+
+                int drawnItemsCounter = 0;
+                for (int i = 0; i < 16; i++)
                 {
-                    _formGraphics.DrawImage(
-                        _smItemImages[i],
-                        _itemSlots[drawnItemsCounter],
-                        0, 
-                        0,
-                        _smItemImages[i].Width,
-                        _smItemImages[i].Height,
-                        GraphicsUnit.Pixel
-                    );
-                    
-                    if(_smItems[i].Equipped) _formGraphics.DrawItemEquippedCircle(_itemSlots[drawnItemsCounter]);
+                    if (_smItems[i].Owned)
+                    {
+                        _formGraphics.DrawImage(
+                            _smItemImages[i],
+                            _itemSlots[drawnItemsCounter],
+                            0,
+                            0,
+                            _smItemImages[i].Width,  
+                            _smItemImages[i].Height,
+                            GraphicsUnit.Pixel
+                        );
+
+                        if (_smItems[i].Equipped) _formGraphics.DrawItemEquippedCircle(_itemSlots[drawnItemsCounter]);
+                    }
+                    else
+                    {
+                        _formGraphics.DrawImage(
+                            _smItemImages[i],
+                            _itemSlots[drawnItemsCounter],
+                            0,
+                            0,
+                            _smItemImages[i].Width,
+                            _smItemImages[i].Height,
+                            GraphicsUnit.Pixel,
+                            greyscaleAttributes
+                        );
+                    }
+
+                    drawnItemsCounter++;
                 }
-                else
-                {
-                    _formGraphics.DrawImage(
-                        _smItemImages[i], 
-                        _itemSlots[drawnItemsCounter],
-                        0, 
-                        0,
-                        _smItemImages[i].Width,
-                        _smItemImages[i].Height,
-                        GraphicsUnit.Pixel,
-                        greyscaleAttributes
-                    );
-                }
-                drawnItemsCounter++;
             }
+            catch
+            {
+                //
+            }
+
         }
         
 
